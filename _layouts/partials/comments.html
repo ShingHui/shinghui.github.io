@@ -125,19 +125,18 @@ script_includes:
   <div class="content">
     {{ content }}
   </div>
-</article>
 
-<!-- Cusdis Comments Start -->
-  <div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="e21dcd46-dffb-4ef8-ba43-1c2bd0ec4cb1"
-  data-page-id="{{ PAGE_ID }}"
-  data-page-url="{{ PAGE_URL }}"
-  data-page-title="{{ PAGE_TITLE }}"
-></div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-<!-- Cusdis Comments End -->
-
+ <!-- Cusdis Comments Start -->
+ <div id="cusdis_thread"
+   data-host="https://cusdis.com"
+   data-app-id="e21dcd46-dffb-4ef8-ba43-1c2bd0ec4cb1"
+   data-page-id="{{ page.url }}"
+   data-page-url="{{ site.url }}{{ page.url }}"
+   data-page-title="{{ page.title }}">
+ </div>
+ <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
+ <!-- Cusdis Comments End -->
+ </article>
   
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
