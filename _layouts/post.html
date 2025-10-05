@@ -1,101 +1,3 @@
-<!-- 🧡 Emoji Feedback Bar -->
- <style>
- .emoji-btn {
-  background-color: white;
-  border: 2px solid #ddd;
-  border-radius: 50%;       /* 🌟 圆形成形关键 */
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  cursor: pointer;
-  transition: transform 0.15s ease;
-}
-
-.emoji-btn .count {
-  display: block;
-  font-size: 0.8rem;
-  margin-top: 2px;
-}
-
-.emoji-btn:hover {
-  transform: scale(1.1);
-  border-color: #aaa;
-}
-</style>
-
-<!-- 🧡 Emoji Feedback Bar -->
-<div id="emoji-feedback" style="text-align:center; margin: 1rem 0;">
-  <p> feedback👇 </p>
-  <div id="emoji-buttons" style="font-size:1.5rem; display:flex; justify-content:center; gap:1rem;">
-    <button class="emoji-btn" data-emoji="👍">👍 <span class="count">0</span></button>
-    <button class="emoji-btn" data-emoji="❤️">❤️ <span class="count">0</span></button>
-    <button class="emoji-btn" data-emoji="🚀">🚀 <span class="count">0</span></button>
-    <button class="emoji-btn" data-emoji="👀">👀 <span class="count">0</span></button>
-    <button class="emoji-btn" data-emoji="🎉">🎉 <span class="count">0</span></button>
-  </div>
-</div>
-
-<!-- ✨ Cusdis Comment Section -->
-<div id="cusdis_thread"
-  data-host="https://cusdis.com"
-  data-app-id="e21dcd46-dffb-4ef8-ba43-1c2bd0ec4cb1"
-  data-page-id="{{ page.url }}"
-  data-page-url="{{ page.url | absolute_url }}"
-  data-page-title="{{ page.title }}">
-</div>
-<script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
-
-<!-- 🔥 Firebase SDK + Realtime Database Emoji 逻辑 -->
-<script type="module">
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-  import { getDatabase, ref, get, set, onValue } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
-
-  // 🔧 你的 Firebase 配置
-  const firebaseConfig = {
-    apiKey: "AIzaSyCQEica9Hi50qhp69v1tL7gLcvwRvatw5A",
-    authDomain: "blog-emoji-feedback.firebaseapp.com",
-    databaseURL: "https://blog-emoji-feedback-default-rtdb.asia-southeast1.firebasedatabase.app/",
-    projectId: "blog-emoji-feedback",
-    storageBucket: "blog-emoji-feedback.firebasestorage.app",
-    messagingSenderId: "27383708111",
-    appId: "1:27383708111:web:6e4ae1f23b4a5a41097aba"
-  };
-
-  // 🚀 初始化
-  const app = initializeApp(firebaseConfig);
-  const db = getDatabase(app);
-  const postSlug = "{{ page.url | slugify }}"; // 文章唯一ID
-  const buttons = document.querySelectorAll('.emoji-btn');
-
-  // 📡 页面加载时：实时监听该文章的 emoji 计数
-  const postFeedbackRef = ref(db, 'emojiFeedback/' + postSlug);
-  onValue(postFeedbackRef, (snapshot) => {
-    const data = snapshot.val() || {};
-    buttons.forEach(btn => {
-      const emoji = btn.dataset.emoji;
-      const count = data[emoji] || 0;
-      btn.querySelector('.count').textContent = count;
-    });
-  });
-
-  // 🖱️ 点击按钮时：+1 计数
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const emoji = btn.dataset.emoji;
-      const emojiRef = ref(db, 'emojiFeedback/' + postSlug + '/' + emoji);
-
-      get(emojiRef).then(snapshot => {
-        const current = snapshot.val() || 0;
-        set(emojiRef, current + 1);
-      });
-    });
-  });
-</script>
-
-
 ---
 layout: default
 refactor: true
@@ -104,6 +6,7 @@ panel_includes:
 tail_includes:
   - related-posts
   - post-nav
+  - comments   # ← 新增这行(给留言放在最Bottom)
 script_includes:
   - comment
 ---
@@ -224,18 +127,6 @@ script_includes:
     {{ content }}
   </div>
 
- <!-- Cusdis Comments Start -->
- <div id="cusdis_thread"
-   data-host="https://cusdis.com"
-   data-app-id="e21dcd46-dffb-4ef8-ba43-1c2bd0ec4cb1"
-   data-page-id="{{ page.url }}"
-   data-page-url="{{ site.url }}{{ page.url }}"
-   data-page-title="{{ page.title }}">
- </div>
- <script async defer src="https://cusdis.com/js/cusdis.es.js"></script>
- <!-- Cusdis Comments End -->
- </article>
-  
   <div class="post-tail-wrapper text-muted">
     <!-- categories -->
     {% if page.categories.size > 0 %}
@@ -285,4 +176,5 @@ script_includes:
     </div>
     <!-- .post-tail-bottom -->
   </div>
-  <!-- div.post-tail-wrapper --></article>
+  <!-- div.post-tail-wrapper -->
+</article>
