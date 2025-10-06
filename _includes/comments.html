@@ -60,10 +60,10 @@
   // 🚀 Initial
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
-  const postSlug = "{{ page.url | slugify }}"; // 文章唯一ID
+  const postSlug = "{{ page.url | slugify }}"; // 
   const buttons = document.querySelectorAll('.emoji-btn');
 
-  // 📡 Page Loading：Count 
+  // 📡 Page Loading：Realtime Count 
   const postFeedbackRef = ref(db, 'emojiFeedback/' + postSlug);
   onValue(postFeedbackRef, (snapshot) => {
     const data = snapshot.val() || {};
