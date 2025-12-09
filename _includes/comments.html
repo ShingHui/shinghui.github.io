@@ -5,7 +5,7 @@
 .emoji-btn {
   background-color: white;
   border: 2px solid #ddd;
-  border-radius: 50%;       /* 🌟 圆形成形关键*/
+  border-radius: 50%;       /*⭕Button*/
   width: 50px;
   height: 50px;
   display: flex;
@@ -41,12 +41,12 @@
 </div>
 
 
-<!-- 🔥 Firebase SDK + Realtime Database Emoji 逻辑 -->
+<!-- 🔥 Firebase SDK + Realtime Database Emoji -->
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
   import { getDatabase, ref, get, set, onValue } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
 
-  // 🔧 你的 Firebase 配置
+  // 🔧 Firebase 
   const firebaseConfig = {
     apiKey: "AIzaSyCQEica9Hi50qhp69v1tL7gLcvwRvatw5A",
     authDomain: "blog-emoji-feedback.firebaseapp.com",
@@ -57,13 +57,13 @@
     appId: "1:27383708111:web:6e4ae1f23b4a5a41097aba"
   };
 
-  // 🚀 初始化
+  // 🚀 Initial
   const app = initializeApp(firebaseConfig);
   const db = getDatabase(app);
-  const postSlug = "{{ page.url | slugify }}"; // 文章唯一ID
+  const postSlug = "{{ page.url | slugify }}"; // 
   const buttons = document.querySelectorAll('.emoji-btn');
 
-  // 📡 页面加载时：实时监听该文章的 emoji 计数
+  // 📡 Page Loading：Realtime Count 
   const postFeedbackRef = ref(db, 'emojiFeedback/' + postSlug);
   onValue(postFeedbackRef, (snapshot) => {
     const data = snapshot.val() || {};
@@ -74,7 +74,7 @@
     });
   });
 
-  // 🖱️ 点击按钮时：+1 计数
+  // 🖱️ Click Button：+1 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
       const emoji = btn.dataset.emoji;
