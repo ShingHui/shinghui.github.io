@@ -28,8 +28,8 @@ url: "https://shinghui.github.io"
 github:
   username: Shing Hui # change to your GitHub username
 
-twitter:
-  username: twitter_username # change to your Twitter username
+instagram:
+  username: shing_huii # change to your Instagram username
 
 social:
   # Change to your full name.
@@ -38,7 +38,7 @@ social:
   email: angelwsh26@hotmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    - https://www.instagram.com/shing_huii/ # change to your Instagram homepage
     - https://shinghui.github.io/ # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
