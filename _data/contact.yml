@@ -3,8 +3,9 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: 
+  icon: "fab fa-linkedin" 
+  url: "https://www.linkedin.com/in/shing-hui-wong-a165813a0/"
 
 - type: email
   icon: "fas fa-envelope"

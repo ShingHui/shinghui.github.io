@@ -28,8 +28,8 @@ url: "https://shinghui.github.io"
 github:
   username: Shing Hui # change to your GitHub username
 
-instagram:
-  username: shing_huii # change to your Instagram username
+linkedin:
+  url:"https://www.linkedin.com/in/shing-hui-wong-a165813a0/"
 
 social:
   # Change to your full name.
@@ -40,9 +40,10 @@ social:
     # The first element serves as the copyright owner's link
     - https://www.instagram.com/shing_huii/ # change to your Instagram homepage
     - https://shinghui.github.io/ # change to your GitHub homepage
+    - https://www.linkedin.com/in/shing-hui-wong-a165813a0/ # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
-    # - https://www.linkedin.com/in/username
+
 
 # Site Verification Settings
 webmaster_verifications:
