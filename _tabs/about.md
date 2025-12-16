@@ -10,7 +10,7 @@ Welcome to my little corner of the internet, and thank you for stopping by. If y
 
 My name is Shing Hui, and I created this website in the winter of 2025 as a creative outlet for my love of travel, photography, and personal reflections. I realized that my personal social media accounts weren’t giving me the space or reach I wanted—especially when it came to the meaningful conversations and touching stories I encountered during my travels. So I decided to create a more intentional platform, and that’s how Glowing Space was born. 
 
-![background](/assets/img/about/IMG_1404.jpg)
+![personal iceland](/assets/img/about/IMG_1404.jpg)
 
 I didn’t travel very far during my childhood, but I’m grateful that my family brought me to several ASEAN countries… Looking back at those albums always fills me with warmth, and I think that’s how photography slowly became one of my passions.
 
