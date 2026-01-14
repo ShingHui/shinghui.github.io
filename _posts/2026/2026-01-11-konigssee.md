@@ -321,4 +321,3 @@ image:
     Usually 9:00 - 16:30. Check the <a href="https://www.jennerbahn.de/en/" target="_blank">official site</a> as they often close for maintenance in Nov/Dec.
   </p>
 
-</div>
