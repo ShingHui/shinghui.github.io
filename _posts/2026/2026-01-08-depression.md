@@ -155,7 +155,7 @@ image:
     <div class="comic-panel" style="background: #fff5f5;">
       <span class="comic-label" style="background: #e53935;">The Correlation</span>
       <h4 style="margin-top: 5px; font-weight: 800; text-transform: uppercase;">1. STRESS & DEPRESSION</h4>
-      <img src="/assets/img/portfolio/stress.jpg" class="img-fluid" style="border: 2px solid #2d3748; margin: 10px 0;">
+      <img src="/assets/img/portfolio/stress.jpg" alt="stress regression" class="img-fluid" style="border: 2px solid #2d3748; margin: 10px 0;">
       <ul style="font-size: 0.9rem; padding-left: 20px; margin-bottom: 0;">
        <li style="margin-top: 5px;">
          <strong>Direct Hit:</strong><br>
@@ -167,7 +167,7 @@ image:
     <div class="comic-panel" style="background: #e0f2f1;">
       <span class="comic-label" style="background: #00897b;">The Buffer</span>
       <h4 style="margin-top: 5px; font-weight: 800; text-transform: uppercase;">2. THE SHIELD EFFECT</h4>
-      <img src="/assets/img/portfolio/buffer.jpg" class="img-fluid" style="border: 2px solid #2d3748; margin: 10px 0;">
+      <img src="/assets/img/portfolio/buffer.jpg" alt="resilience regression" class="img-fluid" style="border: 2px solid #2d3748; margin: 10px 0;">
       <ul style="font-size: 0.9rem; padding-left: 20px; margin-bottom: 0;">
        <li style="margin-top: 5px;">
          <strong>Shielding Up:</strong><br>
