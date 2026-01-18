@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Hola Barcelona! 48 Hours of Sun, Sea & Gaudí"
-date: 2026-01-15 08:00:00 +0800
+date: 2026-01-15 00:00:00 +0800
 categories: [Destination, Barcelona]
 tags: [Barcelona, Churos, Blanes, España, Sagrada Familia, Travel]
 toc: false

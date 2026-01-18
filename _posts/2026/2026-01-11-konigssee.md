@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Day Trip from Salzburg: Königssee, Mount Jenner & The Secret Combo Ticket"
-date: 2026-01-11 08:00:00 +0800
+date: 2026-01-11 00:00:00 +0800
 categories: [Destination, Austria]
 tags: [Salzburg, Königssee, Germany, Hiking, Budget Tips]
 toc: false

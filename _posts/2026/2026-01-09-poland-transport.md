@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kraków Airport to City Centre: The Complete Guide"
-date: 2026-01-08 08:00:00 +0800
+date: 2026-01-08 00:00:00 +0800
 categories: [Destination, Poland]
 tags: [Kraków, Transport, Guide]
 toc: false
