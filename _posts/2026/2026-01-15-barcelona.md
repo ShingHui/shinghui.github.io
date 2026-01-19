@@ -269,7 +269,7 @@ image:
       <h3>Ciacco Gelato</h3>
       <p>Recommended by a friend, and it "over-deserved" the hype! I grabbed the Pistachio and Hazelnut flavors.</p>
       <p>It’s a tiny shop with limited seating (you might have to stand), but the welcome was warm and the flavors were incredible. Vegan and Gluten-free options available too.</p>
-      <p><em>Cost: €7.00</em></p>
+      <p><em>Cost: €3.00</em></p>
     </div>
   </div>
 
