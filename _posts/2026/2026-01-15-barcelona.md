@@ -75,7 +75,7 @@ image:
   .info-box.tip { background: var(--box-tip-bg); border-left: 4px solid var(--box-tip-border); color: var(--box-tip-text); }
   .map-responsive { overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; margin: 20px 0; background: #f0f0f0; border-radius: 4px; }
   .map-responsive iframe { left: 0; top: 0; height: 100%; width: 100%; position: absolute; border: 0; }
-  @media (max-width: 650px) {
+  @media (max-width: 768px) {
     .spot-highlight { grid-template-columns: 1fr; }
     .gallery-grid { grid-template-columns: 1fr; }
   }
