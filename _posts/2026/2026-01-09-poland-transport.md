@@ -88,7 +88,7 @@ image:
 
   /* Bottom Tip Box */
   .highlight-tip {
-    background: #fff3e0; /* Orange-ish for warnings */
+    background: #fff3e0; 
     padding: 10px;
     border-radius: 8px;
     font-size: 0.85rem;
@@ -164,12 +164,11 @@ image:
   }
 
   .taxi-highlight {
-    background: #e8f5e9; /* Light green highlight for City Centre */
+    background: #e8f5e9; 
     font-weight: bold;
   }
 
   /* --- MOBILE RESPONSIVE --- */
-  /* This must be INSIDE the style tag */
   @media (max-width: 768px) {
     .transport-grid { grid-template-columns: 1fr; }
     

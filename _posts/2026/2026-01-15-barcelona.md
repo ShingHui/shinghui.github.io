@@ -2,7 +2,7 @@
 layout: post
 title: "Hola Barcelona! 48 Hours of Sun, Sea & Gaudí"
 date: 2026-01-15 00:00:00 +0800
-categories: [Destination, Barcelona]
+categories: [Destination, Southwestern Europe]
 tags: [Barcelona, Churos, Blanes, España, Sagrada Familia, Travel]
 toc: false
 description: 🇪🇸 Escaping to Barcelona and the Costa Brava for a perfect solo weekend.

@@ -2,7 +2,7 @@
 layout: post
 title: "Bratislava in January: Cheap Tickets, Low Expectations, One Quiet City"
 date: 2026-01-19 00:00:00 +0800
-categories: [Destination, Slovenia]
+categories: [Destination, Central Europe]
 tags: [Bratislava, Čumil, Trenčín, Slovakia, Travel]
 toc: false
 image:
