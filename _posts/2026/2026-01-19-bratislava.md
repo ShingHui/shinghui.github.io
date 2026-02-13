@@ -11,7 +11,6 @@ image:
 ---
 
 <style>
-  /* glommy winter theme */
   :root {
     --concrete-bg: #f0f2f5;
     --slate-text: #2c3e50;
@@ -33,7 +32,6 @@ image:
     line-height: 1.6;
   }
 
-  /* Header Section */
   .city-header {
     text-align: center;
     margin-bottom: 40px;
@@ -53,7 +51,6 @@ image:
     color: #666;
   }
 
-  /* Intro Text */
   .intro-text {
     font-style: italic;
     margin-bottom: 40px;
@@ -144,11 +141,6 @@ image:
     width: 100%;
     height: auto;
     display: block;
-  }
-
-  @media (max-width: 600px) {
-    .bratislava-container { padding: 15px; }
-    .city-header h1 { font-size: 1.8em; }
   }
 </style>
 

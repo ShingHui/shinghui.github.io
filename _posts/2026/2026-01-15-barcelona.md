@@ -12,24 +12,17 @@ image:
 ---
 
 <style>
-  /* --- 🇪🇸 BARCELONA THEME --- */
   :root {
-    /* Terracotta Orange */
     --accent-color: #e67e22;   
-    
-    /* Warm Paper Background */
     --bg-paper: #fffcf5;       
     
-    /* Fonts */
     --font-serif: "Georgia", "Times New Roman", serif;
     --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
     
-    /* Box Colors */
     --box-warning-bg: #fff3cd; --box-warning-text: #e65100; --box-warning-border: #ffcc80;
     --box-tip-bg: #e1f5fe;     --box-tip-text: #0277bd;     --box-tip-border: #4fc3f7;
   }
 
-  /* --- DARK MODE --- */
   @media (prefers-color-scheme: dark) {
     :root {
       --box-warning-bg: #4e342e; --box-warning-text: #ffcc80; --box-warning-border: #ff8f00;
@@ -37,8 +30,6 @@ image:
     }
     .receipt-card { filter: brightness(0.9); }
   }
-
-  /* --- LAYOUT STYLES (Universal) --- */
   .story-container {
     font-family: var(--font-sans); color: inherit; line-height: 1.7; max-width: 740px; margin: 0 auto;
   }
@@ -75,10 +66,6 @@ image:
   .info-box.tip { background: var(--box-tip-bg); border-left: 4px solid var(--box-tip-border); color: var(--box-tip-text); }
   .map-responsive { overflow: hidden; padding-bottom: 56.25%; position: relative; height: 0; margin: 20px 0; background: #f0f0f0; border-radius: 4px; }
   .map-responsive iframe { left: 0; top: 0; height: 100%; width: 100%; position: absolute; border: 0; }
-  @media (max-width: 768px) {
-    .spot-highlight { grid-template-columns: 1fr; }
-    .gallery-grid { grid-template-columns: 1fr; }
-  }
 </style>
 
 <div class="story-container">
