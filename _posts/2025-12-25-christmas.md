@@ -64,9 +64,9 @@ In this post, you’ll discover what the festive season looks like in Poland, a 
     <strong>Wrocław</strong> — The absolute favorite. Spacious, immersive, and bold.
     
     <div class="oscypek-gallery" style="display: flex; gap: 12px; margin-top: 15px; overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-      <img src="/assets/img/2025/christmas/wroclaw-christmas-market.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
-      <img src="/assets/img/2025/christmas/wroclaw-market-1.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
-      <img src="/assets/img/2025/christmas/wroclaw-square.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">     
+      <img src="/assets/img/2025/christmas/wroclaw-christmas-market.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/wroclaw-market-1.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/wroclaw-square.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">     
     </div>
   </div>
 
@@ -75,8 +75,8 @@ In this post, you’ll discover what the festive season looks like in Poland, a 
     <strong>Kraków</strong> — Magical medieval vibes, though it can get crowded.
     
     <div class="oscypek-gallery" style="display: flex; gap: 12px; margin-top: 15px; overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-      <img src="/assets/img/2025/christmas/krakow-christmas-market.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
-      <img src="/assets/img/2025/christmas/krakow.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/krakow-christmas-market.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/krakow.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
     </div>
   </div>
 
@@ -85,9 +85,9 @@ In this post, you’ll discover what the festive season looks like in Poland, a 
     <strong>Poznań</strong> — Best for families with kid-friendly rides.
     
     <div class="oscypek-gallery" style="display: flex; gap: 12px; margin-top: 15px; overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-      <img src="/assets/img/2025/christmas/poznan-christmas-market.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
-      <img src="/assets/img/2025/christmas/poznan-square.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
-      <img src="/assets/img/2025/christmas/poznan-travel-buddy.JPEG" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/poznan-christmas-market.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/poznan-square.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
+      <img src="/assets/img/2025/christmas/poznan-travel-buddy.JPEG" alt="" style="flex: 0 0 70%; min-width: 260px; border-radius: 12px; object-fit: cover; height: 320px; box-shadow: var(--guide-shadow);" loading="lazy">
     </div>
   </div>
 
@@ -157,10 +157,11 @@ This is hands down one of the best things you can eat at a Christmas market.
 > I’m not exaggerating when I say: **this is one of the best cheeses I’ve ever had in my life.**
 
 <div class="oscypek-gallery" style="display: flex; gap: 10px; margin: 25px 0; overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-  <img src="/assets/img/2025/christmas/oscypek.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
-  <img src="/assets/img/2025/christmas/smoked-cheese.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
-  <img src="/assets/img/2025/christmas/cheese.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/oscypek.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/smoked-cheese.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/cheese.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
 </div>
+
 <p style="text-align: center; font-size: 0.85rem; color: #888; margin-top: -5px; font-style: italic;">
   📸 Different stages of grilling: From the hot pan to that pure golden perfection.
 </p>
@@ -171,9 +172,9 @@ This is hands down one of the best things you can eat at a Christmas market.
 Classic, hearty, and perfect for winter. I went straight for the Polish sausages—and they didn’t disappoint.
 
 <div class="oscypek-gallery" style="display: flex; gap: 10px; margin: 25px 0; overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-  <img src="/assets/img/2025/christmas/grilled-meats.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
-  <img src="/assets/img/2025/christmas/grilled-meats-1.jpg" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
-  <img src="/assets/img/2025/christmas/sausages-and-meats.jpg" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/grilled-meats.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/grilled-meats-1.jpg" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/sausages-and-meats.jpg" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
 </div>
 
 ---
@@ -229,9 +230,9 @@ Poznań usually serves mulled wine in traditional glass mugs.
 Prices typically range from **12–30 PLN**, depending on the city and container. Sometimes it’s served in paper to-go cups—which can be a bit of a letdown, but still warming on a cold night.
 
 <div class="oscypek-gallery" style="display: flex; gap: 10px; margin: 25px 0; overflow-x: auto; padding-bottom: 10px; -webkit-overflow-scrolling: touch;">
-  <img src="/assets/img/2025/christmas/red-wine.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
-  <img src="/assets/img/2025/christmas/me-red-wine.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
-  <img src="/assets/img/2025/christmas/travel-buddy.JPEG" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/red-wine.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/me-red-wine.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
+  <img src="/assets/img/2025/christmas/travel-buddy.JPEG" alt="" style="flex: 0 0 32%; min-width: 200px; border-radius: 12px; object-fit: cover; height: 280px; box-shadow: var(--guide-shadow);" loading="lazy">
 </div>
 <p style="text-align: center; font-size: 0.85rem; color: #888; margin-top: -5px; font-style: italic;">
   📸 Red-Wine Memories
