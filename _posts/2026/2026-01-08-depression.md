@@ -5,6 +5,7 @@ date: 2026-01-08 00:00:00 +0800
 categories: [Portfolio]
 tags: [Depression, Resilience, Life Stress, ]
 toc: false
+description: An in-depth survey exploring stress and depression among college freshmen.
 image:
   path: /assets/img/portfolio/statistic-project.jpg
   alt: Psychology Statistics (Freshman Group Project) x NCKU x 2022 (Feb-Jun)
