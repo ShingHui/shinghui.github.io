@@ -457,7 +457,7 @@ order: 6
       moments through travel and transforming ideas into meaningful visual experiences.
     </p>
     <div class="portfolio-buttons">
-      <a href="/assets/cv/angel-cv.pdf" class="btn-primary">Download CV</a>
+      <a href="/assets/cv/resume-wong-shing-hui.pdf" class="btn-primary">Download CV</a>
       <a href="mailto:angelwsh26@hotmail.com" class="btn-secondary">Get in touch</a>
     </div>
   </div>
@@ -643,7 +643,7 @@ order: 6
         <p class="edu-detail-light">
           <strong>cGPA</strong> 4.17 / 4.3 <br>
           Focused on Clinical &amp; Biological Neuroscience Subfields <br>
-          Learning Spanish (A2) &amp; Thai (A2)
+          Learned Spanish (A2) &amp; Thai (A2)
         </p>
         <div class="edu-modules">
           <span class="edu-module-tag">Personality Psychology</span>
