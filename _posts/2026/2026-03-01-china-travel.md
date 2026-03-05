@@ -1,18 +1,15 @@
 ---
 layout: post
 title: "13 Days Solo in China"
-date: 2025-12-25 00:00:00 +0800
+date: 2026-03-01 00:00:00 +0800
 categories: [Destination, China]
 tags: [Solo Trip, Huangshan, Shanghai, HangZhou, QingDao, Travel, China]
 toc: true
+description: China Apps and Other Useful Info (Expenses/Route)
 ---
 
-<style>
-  .china-post h2 a,
-  .china-post h3 a,
-  .china-post .anchor,
-  .china-post .header-anchor { display: none !important; }
 
+<style>
   .china-post {
     --ink: #1a1208;
     --paper: #f5f0e8;
@@ -171,7 +168,7 @@ toc: true
   .china-post .cp-section-paper {
     background: var(--paper);
     padding: 4rem 2rem;
-    margin: 0 -1rem;
+    margin: 0;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
   }
@@ -245,11 +242,15 @@ toc: true
     margin-bottom: 2.2rem;
     align-items: flex-start;
     opacity: 0;
-    transform: translateX(-20px);
-    transition: all 0.5s ease;
+    animation: cp-slideIn 0.5s ease forwards;
   }
 
-  .china-post .tl-item.visible { opacity: 1; transform: translateX(0); }
+  .china-post .tl-item:nth-child(1) { animation-delay: 0.1s; }
+  .china-post .tl-item:nth-child(2) { animation-delay: 0.25s; }
+  .china-post .tl-item:nth-child(3) { animation-delay: 0.4s; }
+  .china-post .tl-item:nth-child(4) { animation-delay: 0.55s; }
+  .china-post .tl-item:nth-child(5) { animation-delay: 0.7s; }
+  .china-post .tl-item:nth-child(6) { animation-delay: 0.85s; }
 
   .china-post .tl-date {
     flex: 0 0 70px;
@@ -399,16 +400,20 @@ toc: true
   }
 
   .china-post .cost-bar-fill {
-    height: 100%;
-    border-radius: 4px;
-    background: var(--ink);
-    width: 0;
-    transition: width 1.2s cubic-bezier(0.25, 1, 0.5, 1);
+   height: 100%;
+   border-radius: 4px;
+   background: var(--ink);
+   width: 0;
+   animation: cp-barGrow 1.2s cubic-bezier(0.25, 1, 0.5, 1) 0.3s forwards;
   }
 
   .china-post .cost-bar-fill.gold { background: var(--gold); }
   .china-post .cost-bar-fill.red  { background: var(--red); }
   .china-post .cost-bar-fill.rust { background: var(--rust); }
+
+  @keyframes cp-barGrow {
+  to { width: var(--w, 0%); }
+  }
 
   /* ─── APPS GRID ──────────────────────────────────── */
   .china-post .apps-grid {
@@ -642,28 +647,6 @@ toc: true
     border-color: rgba(255,255,255,0.6);
   }
 
-  /* ─── CP FOOTER ──────────────────────────────────── */
-  .china-post .cp-footer {
-    background: var(--ink);
-    color: rgba(245,240,232,0.5);
-    text-align: center;
-    padding: 3rem 2rem;
-    margin: 3rem -1rem 0;
-    font-family: 'Space Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
-  }
-
-  .china-post .cp-footer strong {
-    display: block;
-    font-family: 'Playfair Display', serif;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--gold-light);
-    letter-spacing: 0;
-    margin-bottom: 0.5rem;
-  }
-
   /* ─── ANIMATIONS (prefixed to avoid conflicts) ───── */
   @keyframes cp-fadeUp {
     from { opacity: 0; transform: translateY(24px); }
@@ -675,6 +658,11 @@ toc: true
     50%       { opacity: 1; }
   }
 
+  @keyframes cp-slideIn {
+  from { opacity: 0; transform: translateX(-20px); }
+  to   { opacity: 1; transform: translateX(0); }
+  }
+
   /* ─── RESPONSIVE ─────────────────────────────────── */
   @media (max-width: 640px) {
     .china-post .story-grid       { grid-template-columns: 1fr; gap: 2rem; }
@@ -684,7 +672,6 @@ toc: true
     .china-post .tl-date          { flex: 0 0 55px; font-size: 0.56rem; }
     .china-post .hero-meta        { gap: 1.2rem; }
     .china-post .gallery-grid { gap: 3px; }
-
   }
 </style>
 
@@ -713,7 +700,7 @@ toc: true
   <!-- INTRO -->
   <div class="cp-section">
     <div class="section-label">The Beginning</div>
-    <h2 id="a-graduation-gift" class="cp-h2">A Graduation Gift<br/><em>to Myself</em></h2>
+    <h2 id="graduation-gift" class="cp-h2">A Graduation Gift<br/><em>to Myself</em></h2>
     <p class="cp-p">In September 2025, I packed a 26-inch suitcase and flew to China alone. No travel companions, no fixed agenda — just a rough city list and the willingness to figure things out as I went.</p>
     <p class="cp-p">As a Malaysian passport holder, I was eligible for a 30-day visa-free stay in China, so visa procedures were not a concern at all. That made planning significantly simpler.</p>
     <p class="cp-p">The itinerary was what some might call "special forces style" — packed, efficient, and occasionally chaotic. But I adjusted along the way depending on my energy and mood, and that flexibility turned out to be half the adventure.</p>
@@ -787,7 +774,7 @@ toc: true
   <!-- HUANGSHAN -->
   <div class="cp-section">
     <div class="section-label">Highlight #1</div>
-    <h2 id="hiking" class="cp-h2">Hiking <em>Huangshan</em></h2>
+    <h2 id="huangshan" class="cp-h2">Hiking <em>Huangshan</em></h2>
     <div class="story-grid">
       <div class="story-img">
         <img src="/assets/img/2025/china/13days/Huangshan.JPEG" alt="Huangshan misty peaks" loading="lazy"/>
@@ -832,19 +819,19 @@ toc: true
     <div class="cost-bars">
       <div class="cost-bar-row">
         <div class="cost-bar-label"><span>🚄 Transport (High-speed Rail + Didi)</span><span>Largest</span></div>
-        <div class="cost-bar-track"><div class="cost-bar-fill" data-width="72"></div></div>
+        <div class="cost-bar-track"><div class="cost-bar-fill" style="--w: 72%"></div></div>
       </div>
       <div class="cost-bar-row">
         <div class="cost-bar-label"><span>🏨 Accommodation (~MYR 120/night)</span><span>~MYR 1,560</span></div>
-        <div class="cost-bar-track"><div class="cost-bar-fill gold" data-width="55"></div></div>
+        <div class="cost-bar-track"><div class="cost-bar-fill gold" style="--w: 55%"></div></div>
       </div>
       <div class="cost-bar-row">
         <div class="cost-bar-label"><span>🍜 Food & Experiences</span><span>Variable</span></div>
-        <div class="cost-bar-track"><div class="cost-bar-fill rust" data-width="42"></div></div>
+        <div class="cost-bar-track"><div class="cost-bar-fill rust" style="--w: 42%"></div></div>
       </div>
       <div class="cost-bar-row">
         <div class="cost-bar-label"><span>🛍 Shopping</span><span>A little extra</span></div>
-        <div class="cost-bar-track"><div class="cost-bar-fill red" data-width="25"></div></div>
+        <div class="cost-bar-track"><div class="cost-bar-fill red" style="--w: 25%"></div></div>
       </div>
     </div>
     <p style="margin-top:2rem;font-family:'Space Mono',monospace;font-size:0.78rem;color:var(--muted);text-align:center;line-height:1.7;">
@@ -873,7 +860,7 @@ toc: true
   <!-- TIPS -->
   <div class="cp-section" style="border-top:3px solid var(--ink);padding-top:3rem;">
     <div class="section-label">Practical Notes</div>
-    <h2 id="things-i-know" class="cp-h2">Things I Wish<br/><em>I Knew Earlier</em></h2>
+    <h2 id="things-i-wish-i-knew" class="cp-h2">Things I Wish<br/><em>I Knew Earlier</em></h2>
     <div class="tips-grid">
       <div class="tip-card">
         <div class="tip-icon">🚄</div>
@@ -898,11 +885,89 @@ toc: true
     </div>
   </div>
 
-<!-- GALLERY -->
+  <!-- ALIPAY WARNING STORY -->
+  <div class="cp-section" style="padding-top: 0;">
+    <div class="pull-quote" style="border-left-color: var(--red); background: rgba(192,57,43,0.05);">
+      <p style="font-size:1rem; color: var(--ink);">
+        ⚠️ <strong style="font-family:'Space Mono',monospace; font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--red);">Real Story · Alipay Personal QR Codes</strong><br/><br/>
+        At Huangshan, I shared a ride with strangers — and when it came time to pay, both Alipay and WeChat Pay failed. The driver had a <em>personal QR code</em>, and foreign accounts cannot transfer directly to individual Chinese accounts.<br/><br/>
+        It was raining. The driver didn't realise I hadn't paid and let me off. I was nearly an accidental dine-and-dasher.<br/><br/>
+        I contacted Alipay support, who traced the driver's number using my failed transaction record — and we sorted it out. But it was stressful.<br/><br/>
+        <strong style="font-family:'Space Mono',monospace; font-size:0.72rem; letter-spacing:0.08em; color:var(--muted);">
+          HOW TO HANDLE IT IF IT HAPPENS TO YOU:<br/>
+        </strong>
+        <span style="font-size:0.85rem; color:var(--muted);">
+          ① Ask a Chinese friend or Malaysian student in China to top up your Alipay balance directly<br/>
+          ② Open an account at Bank of China to deposit RMB (international credit cards cannot top up Alipay)<br/><br/>
+          👉 Solo travellers heading to scenic areas — carry a small amount of cash, just in case.
+        </span>
+      </p>
+    </div>
+  </div>
+
+
+<!-- ON THE GROUND -->
+  <div class="cp-section">
+    <div class="section-label">On The Ground</div>
+    <h2 id="day-to-day-essentials" class="cp-h2">Day-to-Day <em>Essentials</em></h2>
+    <div class="tips-grid">
+
+      <div class="tip-card">
+        <div class="tip-icon">🚇</div>
+        <div class="tip-title">Metro is Your Best Friend</div>
+        <p class="tip-text">Signs are in English and fares are only 2–4 RMB per ride — often faster than taxis since you skip traffic entirely. Alipay lets you download each city's metro card directly in the app, no need to queue at ticket machines.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🚉</div>
+        <div class="tip-title">Arrive at Train Stations Early</div>
+        <p class="tip-text">Big cities often have 3–4 different train stations — double-check which one you're booked into. Gates open 15–20 minutes before departure, so treat it like an airport: aim to arrive 45–60 minutes before your train.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🛂</div>
+        <div class="tip-title">Bag Scans at Every Station</div>
+        <p class="tip-text">Both train and metro stations have bag scanning machines at the entrance — just like an airport. You'll get used to it quickly. You can bring water bottles; they may ask you to take a sip to verify it's water.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🛂</div>
+        <div class="tip-title">Always Carry Your Passport</div>
+        <p class="tip-text">You'll need it for all train boardings and most attractions, but not for metro or buses. China is extremely safe — carrying it in your bag is not a concern at all.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">💧</div>
+        <div class="tip-title">Drinking Water Everywhere</div>
+        <p class="tip-text">Hot and cold drinking water is available at virtually every train station, hotel lobby, and many public spaces. Refill your bottle before boarding — no need to buy bottled water constantly.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🏨</div>
+        <div class="tip-title">Hotels Are Surprisingly Generous</div>
+        <p class="tip-text">Most hotels provide bottled water, toothbrush, toothpaste, shampoo, soap, and a comb as standard. You could realistically travel with almost no toiletries and be completely fine.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">📱</div>
+        <div class="tip-title">Local Phone Number — Optional but Handy</div>
+        <p class="tip-text">You don't strictly need one, but some attraction ticketing via WeChat mini-programs requires a Chinese number. If you're stuck, your hotel front desk can often help. For longer trips, getting a local SIM is worth it.</p>
+      </div>
+
+      <div class="tip-card">
+        <div class="tip-icon">🗣️</div>
+        <div class="tip-title">Most Locals Don't Speak English</div>
+        <p class="tip-text">And that's completely fine — translation apps work incredibly well here, and many locals are used to communicating this way. Alipay has a built-in translation feature. A smile and patience go a long way.</p>
+      </div>
+
+    </div>
+  </div>
+
+  
+  <!-- GALLERY -->
 <div class="gallery-section">
   <div class="section-label">App Gallery</div>
   <h2 id="app-gallery" class="cp-h2">In <em>Action</em></h2>
-
   <div class="gallery-grid">
     <div class="gallery-item" onclick="openLightbox(this)">
       <img src="/assets/img/2025/china/13days/china.JPG" alt="" loading="lazy" />
@@ -947,53 +1012,24 @@ toc: true
 <div class="gallery-lightbox" id="galleryLightbox" onclick="closeLightbox()">
   <button class="gallery-lightbox-close" onclick="closeLightbox()">✕ Close</button>
   <img id="lightboxImg" alt="" />
-</div>      
-
-  <!-- POST FOOTER -->
-  <div class="cp-footer">
-    <strong>13 Days Solo in China</strong>
-    Shanghai · Qingdao · Suzhou · Huangshan · Hangzhou
-    <br/><br/>
-    Written by a Malaysian traveller · September 2025
-    <br/>Graduation Trip · Self-Planned · Fully Solo
-  </div>
+</div>  
 
 </div><!-- end .china-post -->
 
 <script>
-  // Animate timeline items on scroll
-  const tlItems = document.querySelectorAll('.china-post .tl-item');
-  const obs = new IntersectionObserver(entries => {
-    entries.forEach((e, i) => {
-      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 120);
-    });
-  }, { threshold: 0.2 });
-  tlItems.forEach(el => obs.observe(el));
-
-  // Animate cost bars on scroll
-  const bars = document.querySelectorAll('.china-post .cost-bar-fill');
-  const barObs = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-      if (e.isIntersecting) {
-        e.target.style.width = e.target.getAttribute('data-width') + '%';
-        barObs.unobserve(e.target);
-      }
-    });
-  }, { threshold: 0.5 });
-  bars.forEach(b => barObs.observe(b));
-
+  // ─── LIGHTBOX ─────────────────────────────────────
   function openLightbox(card) {
-  const img = card.querySelector('img');
-  document.getElementById('lightboxImg').src = img.src;
-  document.getElementById('lightboxImg').alt = img.alt;
-  document.getElementById('galleryLightbox').classList.add('open');
-  document.body.style.overflow = 'hidden';
+    const img = card.querySelector('img');
+    document.getElementById('lightboxImg').src = img.src;
+    document.getElementById('lightboxImg').alt = img.alt;
+    document.getElementById('galleryLightbox').classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
+
   function closeLightbox() {
     document.getElementById('galleryLightbox').classList.remove('open');
     document.body.style.overflow = '';
   }
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLightbox();
-  });
+
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 </script>
