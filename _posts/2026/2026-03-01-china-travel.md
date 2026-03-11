@@ -8,8 +8,15 @@ toc: true
 description: China Apps and Other Useful Info (Expenses/Route)
 ---
 
-
 <style>
+  .china-post h2 a,
+  .china-post h3 a,
+  .china-post h4 a,
+  .china-post .anchor,
+  .china-post .header-anchor,
+  .china-post .anchor-heading,
+  .china-post [data-anchor] { display: none !important; }
+
   .china-post {
     --ink: #1a1208;
     --paper: #f5f0e8;

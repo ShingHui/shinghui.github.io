@@ -13,7 +13,7 @@ order: 6
   :root {
     --bg-warm:   #F3F1EB;
     --bg-dark:   #1C1C1C;
-    --card-bg:   #FFFDF8;   /* FIX 1: was #FFFFFF, now matches edu/honours warm white */
+    --card-bg:   #FFFDF8;
     --card-dark: #2A2A2A;
     --text:      #1A1A1A;
     --muted:     #595959;
@@ -99,16 +99,21 @@ order: 6
   .btn-secondary {
     font-family: var(--ff-sans);
     background: transparent;
-    color: var(--text) !important;
+    color: inherit !important;          
     padding: 0.7rem 1.6rem;
     border-radius: 999px;
     font-size: 0.9rem;
     font-weight: 600;
-    border: 2px solid var(--text);
+    border: 2px solid currentColor;   
     text-decoration: none !important;
     transition: all 0.2s var(--ease);
+    opacity: 0.85;
   }
-  .btn-secondary:hover { background: var(--text); color: #fff !important; }
+  .btn-secondary:hover {
+    background: var(--text);
+    color: #fff !important;
+    opacity: 1;
+  }
 
   .portfolio-hero-right { position: relative; flex-shrink: 0; }
 
@@ -285,6 +290,36 @@ order: 6
   .edu-detail-light  { font-family: var(--ff-sans); font-size: .85rem; color: var(--muted); line-height: 1.75; }
   .edu-detail-light strong { color: var(--text); font-weight: 700; }
 
+  /* ✅ NEW: skill pillars row inside edu card */
+  .edu-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 14px 0 10px;
+  }
+  .edu-pillar {
+    background: rgba(184,147,90,0.07);
+    border: 1px solid rgba(184,147,90,0.18);
+    border-radius: 10px;
+    padding: 10px 12px;
+  }
+  .edu-pillar-label {
+    font-family: var(--ff-sans);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 4px;
+  }
+  .edu-pillar-text {
+    font-family: var(--ff-sans);
+    font-size: .78rem;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
   .edu-modules { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
   .edu-module-tag {
     font-family: var(--ff-sans); font-size: .7rem; font-weight: 600;
@@ -301,7 +336,6 @@ order: 6
     border-radius: var(--r-card);
     padding: 8px 12px;
     box-shadow: 0 20px 40px -10px rgba(0,0,0,0.06);
-    /* FIX 7: removed margin-bottom, portfolio-divider below provides spacing */
   }
   .honours-row {
     display: flex; align-items: center; justify-content: space-between;
@@ -340,15 +374,15 @@ order: 6
   }
   .portfolio-card {
     position: relative;
-    background: var(--card-bg);           /* now #FFFDF8 */
-    border: 1px solid #EDE8DF;            /* FIX 1: consistent warm border */
+    background: var(--card-bg);
+    border: 1px solid #EDE8DF;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
   }
-  .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(184,147,90,0.1); } /* FIX 1: gold shadow */
+  .portfolio-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(184,147,90,0.1); }
 
   .card-link { text-decoration: none !important; color: inherit !important; }
   .card-link::after {
@@ -358,10 +392,9 @@ order: 6
     z-index: 1;
   }
 
-  .card-img-container { height: 200px; overflow: hidden; background-color: #f0ebe3; } /* FIX 5: warmer placeholder */
+  .card-img-container { height: 200px; overflow: hidden; background-color: #f0ebe3; }
   .card-img-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
 
-  /* FIX 5: no-img-placeholder style */
   .no-img-placeholder {
     width: 100%; height: 100%;
     background: linear-gradient(135deg, #f0ebe3 0%, #e8dfd4 100%);
@@ -371,8 +404,6 @@ order: 6
     padding: 20px; flex-grow: 1;
     display: flex; flex-direction: column;
   }
-
-  /* FIX 3: explicit font-family for card text */
   .card-content h3 {
     font-family: var(--ff-serif);
     font-size: 1.15rem;
@@ -388,8 +419,6 @@ order: 6
     line-height: 1.65;
     margin: 0 0 12px;
   }
-
-  /* FIX 4: tags above title */
   .card-tags {
     display: flex; flex-wrap: wrap; gap: 6px;
     margin-bottom: 8px;
@@ -402,7 +431,6 @@ order: 6
   }
   .card-tag:not(:last-child)::after { content: ' ·'; margin-left: 2px; }
 
-  /* FIX 2: read-more uses gold, not Chirpy blue */
   .read-more {
     margin-top: auto;
     font-family: var(--ff-sans);
@@ -423,19 +451,18 @@ order: 6
     .xp-header { padding: 16px 18px; }
     .xp-details { padding: 0 18px; }
     .xp-item.active .xp-details { padding-bottom: 18px; }
-
-    /* FIX 6: edu cards go single-column on mobile */
     .edu-card-light {
       grid-template-columns: 1fr;
       padding: 20px;
       gap: 12px 0;
     }
     .edu-left { flex-direction: row; flex-wrap: wrap; align-items: center; gap: 8px; }
+    .edu-pillars { grid-template-columns: 1fr; }
+  }
 
-    @media (max-width: 480px) {
-      .honours-row { flex-direction: column; align-items: flex-start; gap: 8px; }
-      .honours-right { align-items: flex-start; flex-direction: row; gap: 10px; }
-    }
+  @media (max-width: 480px) {
+    .honours-row { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .honours-right { align-items: flex-start; flex-direction: row; gap: 10px; }
   }
 </style>
 
@@ -457,7 +484,7 @@ order: 6
       moments through travel and transforming ideas into meaningful visual experiences.
     </p>
     <div class="portfolio-buttons">
-      <a href="/assets/cv/resume-wong-shing-hui.pdf" class="btn-primary">Download CV</a>
+      <a href="/assets/apply/Resume-Wong-Shing-Hui.pdf" class="btn-primary">Download Resume</a>
       <a href="mailto:angelwsh26@hotmail.com" class="btn-secondary">Get in touch</a>
     </div>
   </div>
@@ -630,6 +657,7 @@ order: 6
   <h2 class="edu-section-title">Academic Background</h2>
   <div class="edu-stack">
 
+    <!-- ✅ EXPANDED: NCKU card -->
     <div class="edu-card-light">
       <div class="edu-left">
         <span class="edu-badge">✦ Degree</span>
@@ -641,16 +669,36 @@ order: 6
         <span class="edu-school-light">National Cheng Kung University (NCKU)</span>
         <hr class="edu-divider-line">
         <p class="edu-detail-light">
-          <strong>cGPA</strong> 4.17 / 4.3 <br>
-          Focused on Clinical &amp; Biological Neuroscience Subfields <br>
-          Learned Spanish (A2) &amp; Thai (A2)
+          <strong>cGPA 4.17 / 4.3</strong> &nbsp;·&nbsp; Clinical &amp; Biological Neuroscience Subfields<br>
+          Specialised in understanding the physiological mechanisms underlying human behaviour and mental health — bridging neuroscience, clinical observation, and empirical research methodology.<br><br>
+          Also studied <strong>Spanish (A2)</strong> &amp; <strong>Thai (A2)</strong> as part of a commitment to cross-cultural communication.
         </p>
+
+        <!-- ✅ NEW: three skill pillar cards -->
+        <div class="edu-pillars">
+          <div class="edu-pillar">
+            <span class="edu-pillar-label">🧠 Brain &amp; Behaviour</span>
+            <span class="edu-pillar-text">Physiological Psychology &amp; Cognitive Neuroscience — EEG experiment design, P300 analysis, neural correlates of attention &amp; task-switching</span>
+          </div>
+          <div class="edu-pillar">
+            <span class="edu-pillar-label">🩺 Clinical Foundation</span>
+            <span class="edu-pillar-text">Abnormal Psychology &amp; Clinical Psychology Intro — DSM-5 criteria, psychopathology, direct patient observation in dermatology &amp; nursing settings</span>
+          </div>
+          <div class="edu-pillar">
+            <span class="edu-pillar-label">📊 Research &amp; Data</span>
+            <span class="edu-pillar-text">Research Methods &amp; Statistics — experimental design, R &amp; SPSS, regression modelling, EEG signal preprocessing via MATLAB &amp; EEGLAB</span>
+          </div>
+        </div>
+
         <div class="edu-modules">
           <span class="edu-module-tag">Personality Psychology</span>
           <span class="edu-module-tag">Cognitive Psychology</span>
           <span class="edu-module-tag">Abnormal Psychology</span>
+          <span class="edu-module-tag">Physiological Psychology</span>
+          <span class="edu-module-tag">Clinical Psychology</span>
           <span class="edu-module-tag">Research Methods</span>
-          <span class="edu-module-tag">Data Analysis</span>
+          <span class="edu-module-tag">Data Analysis (R / SPSS)</span>
+          <span class="edu-module-tag">EEG &amp; Signal Processing</span>
         </div>
       </div>
     </div>
@@ -828,7 +876,6 @@ order: 6
 </div>
 
 
-<!-- FIX 4: added cv-section-label for Projects, consistent with all other sections -->
 <hr class="portfolio-divider">
 
 <span class="cv-section-label">Selected Works</span>
