@@ -308,11 +308,11 @@ function renderGrid() {
     card.className = 'photo-card';
     card.style.transitionDelay = Math.min(i * 45, 360) + 'ms';
     card.innerHTML =
-      '<img src="' + p.image + '" alt="' + (p.title || '') + '" loading="lazy">' +
-      '<div class="card-overlay">' +
-        '<div class="card-title">' + (p.title || '') + '</div>' +
-        '<div class="card-meta">' + (p.city || '') + ' &middot; ' + ((p.capturedOn || '').slice(0,7)) + '</div>' +
-      '</div>';
+    '<img src="' + p.image + '" alt="' + (p.title || '') + '" loading="lazy">' +
+    '<div class="card-overlay">' +
+      '<div class="card-title">' + (p.title || '') + '</div>' +
+       '<div class="card-meta">' + (p.city || '') + ' &middot; ' + ((p.capturedOn || '').slice(0,7)) + '</div>' +
+  ' </div>';
     card.onclick = () => openModal(i);
     grid.appendChild(card);
     requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('vis')));
