@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Gosauesee Winter",
+    "image": "/assets/img/gallery/gosau-01.jpg",
+    "city": "Austria",
+    "location": "Austria / Gosauesee",
+    "capturedOn": "2024-12-01",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Winter"]
+  },
+  {
+    "title": "Morning View of Iceland",
+    "image": "/assets/img/gallery/iceland-01.jpg",
+    "city": "Iceland",
+    "location": "Iceland / Þingvellir",
+    "capturedOn": "2024-10-22",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Morning"]
+  },
+  {
+    "title": "Zermatt Matterhorn",
+    "image": "/assets/img/gallery/zermatt-01.png",
+    "city": "Switzerland",
+    "location": "Switzerland / Zermatt",
+    "capturedOn": "2026-03-07",
+    "equipment": "Apple iPhone 15 Pro Max",
+    "tags": ["Landscape", "Mountain"]
+  },
+  {
+    "title": "Wroclaw Cathedral",
+    "image": "/assets/img/gallery/wroclaw-01.jpg",
+    "city": "Poland",
+    "location": "Poland / Wroclaw",
+    "capturedOn": "2026-03-07",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Architecture"]
+  },
+  {
+    "title": "Waterfall in Iceland",
+    "image": "/assets/img/gallery/iceland-02.jpg",
+    "city": "Iceland",
+    "location": "Iceland / Jökulsárlón",
+    "capturedOn": "2024-10-23",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Nature"]
+  },
+  {
+    "title": "Prague Castle",
+    "image": "/assets/img/gallery/prague-01.jpg",
+    "city": "Czech Republic",
+    "location": "Czech Republic / Prague Castle",
+    "capturedOn": "2024-10-27",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Historic"]
+  },
+  {
+    "title": "Kid",
+    "image": "/assets/img/gallery/kid-01.jpg",
+    "city": "Poland",
+    "location": "Poland / Wroclaw Market Square",
+    "capturedOn": "2024-10-01",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Portrait"]
+  }
+]
+
+

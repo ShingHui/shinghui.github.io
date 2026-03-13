@@ -37,7 +37,6 @@ order: 7
 
 /* Filter bar */
 .filter-bar {
-  position: sticky; top: 56px; z-index: 20;
   background: var(--bs-body-bg, #fff);
   padding: 0.8rem 0 0.9rem;
   border-bottom: 1px solid var(--border);
@@ -84,6 +83,7 @@ order: 7
 .photo-card img {
   width: 100%; display: block;
   transition: transform 0.5s var(--ease);
+  pointer-events: none;
 }
 .photo-card:hover { box-shadow: 0 12px 36px rgba(0,0,0,0.2); }
 .photo-card:hover img { transform: scale(1.04); }
@@ -95,6 +95,7 @@ order: 7
   display: flex; flex-direction: column;
   justify-content: flex-end; padding: 14px;
   transition: opacity 0.3s var(--ease);
+  pointer-events: none;
 }
 .photo-card:hover .card-overlay { opacity: 1; }
 .card-title {
@@ -106,6 +107,42 @@ order: 7
   font-size: 0.62rem; color: rgba(255,255,255,0.6);
 }
 
+/* Auto-scroll grid wrapper */
+.grid-scroll-wrap {
+  position: relative;
+  height: 78vh;
+  overflow: hidden;
+  mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 6%,
+    black 88%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    black 6%,
+    black 88%,
+    transparent 100%
+  );
+}
+.grid-scroll-wrap:hover .scroll-hint { opacity: 0; }
+.scroll-hint {
+  position: absolute;
+  bottom: 18px; left: 50%;
+  transform: translateX(-50%);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.62rem; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--muted);
+  pointer-events: none; z-index: 5;
+  transition: opacity 0.4s;
+  display: flex; flex-direction: column; align-items: center; gap: 4px;
+}
+.scroll-hint span { animation: bounce 1.6s ease-in-out infinite; }
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(4px); }
+}
+
 /* Empty state */
 .gal-empty {
   text-align: center; padding: 4rem 1rem;
@@ -114,6 +151,13 @@ order: 7
   display: none;
 }
 .gal-empty.show { display: block; }
+
+/* Loading state */
+.gal-loading {
+  text-align: center; padding: 4rem 1rem;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.88rem; color: var(--muted);
+}
 
 /* Modal */
 .gal-modal {
@@ -215,7 +259,14 @@ order: 7
 </div>
 
 <!-- Grid -->
-<div class="masonry" id="grid"></div>
+<div class="gal-loading" id="gal-loading">Loading photos...</div>
+<div class="grid-scroll-wrap" id="grid-wrap">
+  <div class="masonry" id="grid"></div>
+  <div class="scroll-hint" id="scroll-hint">
+    <span>↓</span>
+    <span style="animation-delay:0.3s">scrolling</span>
+  </div>
+</div>
 <div class="gal-empty" id="gal-empty">No photos match the selected filters.</div>
 
 <!-- Modal -->
@@ -236,66 +287,130 @@ order: 7
 </div>
 
 <script>
-/* Data injected from _data/photos.yml via Liquid */
-const PHOTOS = [
-  {% for p in site.data.photos %}
-  {
-    title:      {{ p.title | jsonify }},
-    image:      {{ p.image | jsonify }},
-    city:       {{ p.city | jsonify }},
-    location:   {{ p.location | jsonify }},
-    capturedOn: {{ p.capturedOn | jsonify }},
-    equipment:  {{ p.equipment | jsonify }},
-    tags:       {{ p.tags | jsonify }}
-  }{% unless forloop.last %},{% endunless %}
-  {% endfor %}
-];
-
-let filtered   = [...PHOTOS];
+let PHOTOS   = [];
+let filtered = [];
 let activeCity = 'All';
 let activeTags = new Set();
 let current    = 0;
 
-/* Build city pills */
-const cities = ['All', ...new Set(PHOTOS.map(p => p.city).filter(Boolean))];
-const cityEl = document.getElementById('city-pills');
-cities.forEach(c => {
-  const b = document.createElement('button');
-  b.className = 'pill' + (c === 'All' ? ' city-active' : '');
-  b.textContent = c;
-  b.onclick = () => {
-    activeCity = c;
-    cityEl.querySelectorAll('.pill').forEach(x =>
-      x.classList.toggle('city-active', x.textContent === c));
-    applyFilters();
-  };
-  cityEl.appendChild(b);
-});
+/* ── Load photos from JSON ── */
+fetch('/assets/data/photos.json')
+  .then(r => {
+    if (!r.ok) throw new Error('Failed to load photos.json');
+    return r.json();
+  })
+  .then(data => {
+    PHOTOS   = data;
+    filtered = [...PHOTOS];
+    document.getElementById('gal-loading').style.display = 'none';
+    buildPills();
+    renderGrid();
+  })
+  .catch(err => {
+    document.getElementById('gal-loading').textContent = 'Could not load photos.';
+    console.error(err);
+  });
 
-/* Build tag pills */
-const allTags = [...new Set(PHOTOS.flatMap(p => p.tags || []))];
-const tagEl = document.getElementById('tag-pills');
-allTags.forEach(t => {
-  const b = document.createElement('button');
-  b.className = 'pill';
-  b.textContent = '#' + t;
-  b.onclick = () => {
-    activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
-    b.classList.toggle('tag-active', activeTags.has(t));
-    applyFilters();
-  };
-  tagEl.appendChild(b);
-});
+/* ── Build filter pills ── */
+function buildPills() {
+  const cities = ['All', ...new Set(PHOTOS.map(p => p.city).filter(Boolean))];
+  const cityEl = document.getElementById('city-pills');
+  cityEl.innerHTML = '';
+  cities.forEach(c => {
+    const b = document.createElement('button');
+    b.className = 'pill' + (c === 'All' ? ' city-active' : '');
+    b.textContent = c;
+    b.onclick = () => {
+      activeCity = c;
+      cityEl.querySelectorAll('.pill').forEach(x =>
+        x.classList.toggle('city-active', x.textContent === c));
+      applyFilters();
+    };
+    cityEl.appendChild(b);
+  });
 
+  const allTags = [...new Set(PHOTOS.flatMap(p => p.tags || []))];
+  const tagEl = document.getElementById('tag-pills');
+  tagEl.innerHTML = '';
+  allTags.forEach(t => {
+    const b = document.createElement('button');
+    b.className = 'pill';
+    b.textContent = '#' + t;
+    b.onclick = () => {
+      activeTags.has(t) ? activeTags.delete(t) : activeTags.add(t);
+      b.classList.toggle('tag-active', activeTags.has(t));
+      applyFilters();
+    };
+    tagEl.appendChild(b);
+  });
+}
+
+/* ── Filter logic ── */
 function applyFilters() {
   filtered = PHOTOS.filter(p => {
     const cOk = activeCity === 'All' || p.city === activeCity;
-    const tOk = activeTags.size === 0 || [...activeTags].every(t => (p.tags||[]).includes(t));
+    const tOk = activeTags.size === 0 || [...activeTags].every(t => (p.tags || []).includes(t));
     return cOk && tOk;
   });
   renderGrid();
 }
 
+/* ── Auto-scroll ── */
+let scrollRAF    = null;
+let scrollPaused = false;
+let scrollY      = 0;
+const SCROLL_SPEED = 0.6; // px per frame — adjust to taste
+
+function startAutoScroll() {
+  cancelAnimationFrame(scrollRAF);
+  const wrap = document.getElementById('grid-wrap');
+
+  function tick() {
+    if (!scrollPaused) {
+      scrollY += SCROLL_SPEED;
+      const max = wrap.scrollHeight - wrap.clientHeight;
+      if (scrollY >= max) {
+        // Fade out, reset, fade back in
+        wrap.style.transition = 'opacity 0.4s';
+        wrap.style.opacity = '0';
+        setTimeout(() => {
+          scrollY = 0;
+          wrap.scrollTop = 0;
+          wrap.style.opacity = '1';
+        }, 400);
+      } else {
+        wrap.scrollTop = scrollY;
+      }
+    }
+    scrollRAF = requestAnimationFrame(tick);
+  }
+  scrollRAF = requestAnimationFrame(tick);
+}
+
+function stopAutoScroll() {
+  cancelAnimationFrame(scrollRAF);
+}
+
+function resetScroll() {
+  scrollY = 0;
+  const wrap = document.getElementById('grid-wrap');
+  if (wrap) wrap.scrollTop = 0;
+}
+
+// Pause on hover
+document.addEventListener('DOMContentLoaded', () => {
+  const wrap = document.getElementById('grid-wrap');
+  if (!wrap) return;
+  wrap.addEventListener('mouseenter', () => { scrollPaused = true; });
+  wrap.addEventListener('mouseleave', () => { scrollPaused = false; });
+  // Touch support
+  wrap.addEventListener('touchstart', () => { scrollPaused = true; }, { passive: true });
+  wrap.addEventListener('touchend',   () => {
+    setTimeout(() => { scrollPaused = false; }, 2000);
+  }, { passive: true });
+});
+
+/* ── Render grid ── */
 function renderGrid() {
   const grid = document.getElementById('grid');
   grid.innerHTML = '';
@@ -307,50 +422,66 @@ function renderGrid() {
     const card = document.createElement('div');
     card.className = 'photo-card';
     card.style.transitionDelay = Math.min(i * 45, 360) + 'ms';
-    card.innerHTML =
-    '<img src="' + p.image + '" alt="' + (p.title || '') + '" loading="lazy">' +
-    '<div class="card-overlay">' +
+
+    const img = document.createElement('img');
+    img.src     = p.image;
+    img.alt     = p.title || '';
+    img.loading = 'lazy';
+
+    const overlay = document.createElement('div');
+    overlay.className = 'card-overlay';
+    overlay.innerHTML =
       '<div class="card-title">' + (p.title || '') + '</div>' +
-       '<div class="card-meta">' + (p.city || '') + ' &middot; ' + ((p.capturedOn || '').slice(0,7)) + '</div>' +
-  ' </div>';
-    card.onclick = () => openModal(i);
+      '<div class="card-meta">' + (p.city || '') + ' &middot; ' + ((p.capturedOn || '').slice(0,7)) + '</div>';
+
+    card.appendChild(img);
+    card.appendChild(overlay);
+    card.addEventListener('click', () => openModal(i));
     grid.appendChild(card);
+
     requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('vis')));
   });
+
+  // Start / restart auto-scroll after a short delay for images to settle
+  resetScroll();
+  setTimeout(startAutoScroll, 600);
 }
 
+/* ── Modal ── */
 function fmt(d) {
   if (!d) return '—';
-  return new Date(d).toLocaleDateString('en-GB', {year:'numeric',month:'long',day:'numeric'});
+  return new Date(d).toLocaleDateString('en-GB', { year: 'numeric', month: 'long', day: 'numeric' });
 }
 
 function openModal(idx) {
   current = idx;
   const p = filtered[idx];
 
-  /* Rebuild img via JS — prevents Chirpy from wrapping static <img> tags */
   const wrap = document.getElementById('m-img-wrap');
   wrap.innerHTML = '';
   const img = document.createElement('img');
   img.src = p.image;
   img.alt = p.title || '';
-  img.style.cssText = 'max-height:82vh;max-width:100%;object-fit:contain;border-radius:3px;display:block;';
   wrap.appendChild(img);
-  document.getElementById('m-title').textContent = p.title || '—';
+
+  document.getElementById('m-title').textContent = p.title    || '—';
   document.getElementById('m-loc').textContent   = p.location || '—';
   document.getElementById('m-eq').textContent    = p.equipment || '—';
   document.getElementById('m-date').textContent  = fmt(p.capturedOn);
   document.getElementById('m-tags').innerHTML    =
     (p.tags || []).map(t => '<span class="m-tag">#' + t + '</span>').join('');
-  document.getElementById('m-prev').style.display = idx > 0 ? '' : 'none';
-  document.getElementById('m-next').style.display = idx < filtered.length - 1 ? '' : 'none';
+
+  document.getElementById('m-prev').style.display = idx > 0                      ? '' : 'none';
+  document.getElementById('m-next').style.display = idx < filtered.length - 1    ? '' : 'none';
   document.getElementById('gal-modal').classList.add('open');
   document.body.style.overflow = 'hidden';
+  scrollPaused = true;
 }
 
 function closeModal() {
   document.getElementById('gal-modal').classList.remove('open');
   document.body.style.overflow = '';
+  scrollPaused = false;
 }
 
 document.getElementById('m-close').onclick = closeModal;
@@ -367,10 +498,8 @@ document.getElementById('m-next').onclick = e => {
 };
 document.addEventListener('keydown', e => {
   if (!document.getElementById('gal-modal').classList.contains('open')) return;
-  if (e.key === 'Escape')     closeModal();
-  if (e.key === 'ArrowLeft'  && current > 0) openModal(current - 1);
+  if (e.key === 'Escape')      closeModal();
+  if (e.key === 'ArrowLeft'  && current > 0)                   openModal(current - 1);
   if (e.key === 'ArrowRight' && current < filtered.length - 1) openModal(current + 1);
 });
-
-renderGrid();
 </script>
