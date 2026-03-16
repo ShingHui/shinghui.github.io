@@ -1,5 +1,3 @@
----
----
 [
   {
     "title": "Gosauesee Winter",
@@ -63,7 +61,106 @@
     "capturedOn": "2024-10-01",
     "equipment": "Canon G7X Mark II",
     "tags": ["Landscape", "Portrait"]
-  }
+  },
+  {
+    "title": "Suzhou Gardens",
+    "image": "/assets/img/gallery/suzhou-01.jpg",
+    "city": "China",
+    "location": "China / Suzhou/ Tiger Hill",
+    "capturedOn": "2025-09-10",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Gardens"]
+  },
+  {
+    "title": "Malmo City Street",
+    "image": "/assets/img/gallery/sweden-01.jpg",
+    "city": "Sweden",
+    "location": "Sweden / Malmö",
+    "capturedOn": "2025-01-18",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Cityscape"]
+  },
+  {
+    "title": "Lisboa Ponte 25 de Abril",
+    "image": "/assets/img/gallery/lisboa-01.jpg",
+    "city": "Portugal",
+    "location": "Portugal / Lisboa",
+    "capturedOn": "2025-02-13",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Bridge"]
+  },
+  {
+    "title": "Eiffel Tower",
+    "image": "/assets/img/gallery/paris-01.jpg",
+    "city": "France",
+    "location": "France / Paris",
+    "capturedOn": "2025-02-09",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Iconic"]
+  },
+  {
+    "title": "Kid in Cologne Square",
+    "image": "/assets/img/gallery/koln-01.jpg",
+    "city": "Germany",
+    "location": "Germany / Cologne",
+    "capturedOn": "2025-02-02",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Portrait"]
+  },
+  {
+    "title": "Suzhou Tiger Hill",
+    "image": "/assets/img/gallery/suzhou-02.jpg",
+    "city": "China",
+    "location": "China / Suzhou",
+    "capturedOn": "2025-09-10",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Nature"]
+  },
+  {
+    "title": "The Bluest Waterfall",
+    "image": "/assets/img/gallery/buarfoss-01.jpg",
+    "city": "Iceland",
+    "location": "Iceland / Buarfoss Waterfall",
+    "capturedOn": "2024-10-21",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Nature", "Waterfall"]
+  },
+  {
+    "title": "Geysir Eruption",
+    "image": "/assets/img/gallery/geysir-01.jpg",
+    "city": "Iceland",
+    "location": "Iceland / Haukadalur Geothermal Area",
+    "capturedOn": "2024-10-21",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Nature"]
+  },
+  {
+    "title": "Kings Lake View",
+    "image": "/assets/img/gallery/konigssee-01.jpg",
+    "city": "Berchtesgaden",
+    "location": "Germany / Königssee",
+    "capturedOn": "2024-10-27",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Historic"]
+  },
+  {
+    "title": "Þingvellir National Park",
+    "image": "/assets/img/gallery/iceland-03.jpg",
+    "city": "Iceland",
+    "location": "Iceland / Þingvellir",
+    "capturedOn": "2024-10-22",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Landscape", "Nature"]
+  },
+  {
+    "title": "Gullfoss Waterfall",
+    "image": "/assets/img/gallery/waterfall-01.jpg",
+    "city": "Iceland",
+    "location": "Iceland / Gullfoss Waterfall",
+    "capturedOn": "2024-10-21",
+    "equipment": "Canon G7X Mark II",
+    "tags": ["Waterfall", "Nature"]
+  } 
 ]
 
 

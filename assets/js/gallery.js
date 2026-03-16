@@ -1,6 +1,3 @@
----
----
-
 /* gallery.js — loaded by _tabs/gallery.md */
 
 let PHOTOS     = [];
@@ -13,7 +10,7 @@ let current    = 0;
 let scrollRAF    = null;
 let scrollPaused = false;
 let scrollY      = 0;
-const SCROLL_SPEED = 0.6; // px per frame — increase to scroll faster
+const SCROLL_SPEED = 1.2; // px per frame — increase to scroll faster
 
 /* ── Init ── */
 document.addEventListener('DOMContentLoaded', () => {
