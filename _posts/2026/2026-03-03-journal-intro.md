@@ -381,15 +381,14 @@ html[data-mode="dark"] .journal mark.hl-cool {
 
   <p class="soft reveal">犹如电影 <em>The Secret Life of Walter Mitty</em> 里的经典台词，</p>
   <p class="soft reveal">当你很喜欢那一刻，你会沉浸在那个时刻，</p>
-  <p class="soft reveal">不想干扰它的美时，你会特别想把它珍藏在心里。</p>
-  <p class="soft reveal">甚至，捨不得拿起任何设备去破坏这份你探视到的秘密。</p>
-
+  <p class="soft reveal">不想干扰它的美时，你会特别想把它珍藏在心里。</p>  
   <div class="gif-wrap">
     <div class="tenor-gif-embed" data-postid="12083897332540237170" data-share-method="host" data-aspect-ratio="2.16522" data-width="100%">
       <a href="https://tenor.com/view/enjoy-life-enjoy-life-quotes-gif-12083897332540237170">Enjoy Life GIF</a>
     </div>
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
   </div>
+  <p class="soft reveal">甚至，捨不得拿起任何设备去破坏这份你探视到的秘密。</p>
 
   <!-- BLOB — 3 lines, cool (quote) -->
   <div class="blob blob-cool reveal">
