@@ -278,7 +278,7 @@ order: 4
   <div class="fp-group-label">★ Lived &amp; Studied</div>
   <div class="fp-grid">
       <div class="fp-card lived">
-      <span class="fp-flag">MY</span>
+      <span class="fp-flag">🇲🇾</span>
       <span class="fp-country">Malaysia</span>
       <span class="fp-city">Selangor</span>
     </div>
@@ -299,7 +299,7 @@ order: 4
   <div class="fp-grid">
     <div class="fp-card"><span class="fp-flag">🇮🇸</span><span class="fp-country">Iceland</span></div>
     <div class="fp-card"><span class="fp-flag">🇹🇭</span><span class="fp-country">Thailand</span></div>
-    <div class="fp-card"><span class="fp-flag">SE</span><span class="fp-country">Sweden</span></div>
+    <div class="fp-card"><span class="fp-flag">🇸🇪</span><span class="fp-country">Sweden</span></div>
     <div class="fp-card"><span class="fp-flag">🇳🇴</span><span class="fp-country">Norway</span></div>
     <div class="fp-card"><span class="fp-flag">🇩🇪</span><span class="fp-country">Germany</span></div>
     <div class="fp-card"><span class="fp-flag">🇫🇷</span><span class="fp-country">France</span></div>
