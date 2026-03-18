@@ -176,32 +176,70 @@ image:
       <li><strong>📅 Valid Dates (2026):</strong> Jan 1 – June 30 & Sept 15 – Dec 31. <br><span style="font-size:0.85rem; color:#c0392b;">(NOT valid in peak summer July/August!)</span></li>
     </ul>
 
+    <!-- 2024 Prices -->
+    <p style="margin-bottom: 6px; font-weight: bold; color: #555;">📅 What I Paid in 2024</p>
     <table class="compare-table">
       <thead>
         <tr style="background: #f1f1f1;">
-          <th>Option</th>
-          <th>Price (Approx)</th>
+          <th>Ticket</th>
+          <th>Price</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>Boat Ticket (St. Bartholomä Return)</td>
+          <td>Boat (Seelände → St. Bartholomä, Return)</td>
           <td>€22.50</td>
         </tr>
         <tr>
-          <td>Cable Car (Ascent & Descent)</td>
+          <td>Jennerbahn Cable Car (After 2PM, Ascent & Descent)</td>
           <td>€34.00</td>
         </tr>
         <tr>
-          <td><strong>Total Separate Cost</strong></td>
+          <td><strong>If Bought Separately</strong></td>
           <td style="color: #c0392b; font-weight: bold;">€56.50</td>
         </tr>
-        <tr style="border-top: 2px solid #333;">
-          <td><strong>✨ Lake-Summit-Ticket</strong></td>
-          <td style="font-weight: bold;">Check Counter (approx €49-€53)</td>
+        <tr style="border-top: 2px solid #555;">
+          <td><strong>✨ Lake-Summit-Ticket (2024)</strong></td>
+          <td style="font-weight: bold;">€49.00</td>
         </tr>
         <tr>
-          <td colspan="2" class="save-money">✅ Save Money & Time (Buy at Boat Dock!)</td>
+          <td colspan="2" class="save-money">✅ Saved ~€7.50 with the Combo!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 2025/26 Prices -->
+    <p style="margin-top: 20px; margin-bottom: 6px; font-weight: bold; color: #555;">📅 Current Prices (2025/26 — Verify Before You Go!)</p>
+    <table class="compare-table">
+      <thead>
+        <tr style="background: #f1f1f1;">
+          <th>Ticket</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Boat (Seelände → St. Bartholomä, Return)</td>
+          <td>€23.40</td>
+        </tr>
+        <tr>
+          <td>Boat (Seelände → Salet, Return) <em style="font-size:0.8rem; color:#888;">(summer only)</em></td>
+          <td>€29.80</td>
+        </tr>
+        <tr>
+          <td>Jennerbahn Cable Car (Ascent & Descent)</td>
+          <td>€45.00</td>
+        </tr>
+        <tr>
+          <td><strong>If Bought Separately</strong></td>
+          <td style="color: #c0392b; font-weight: bold;">~€68.40</td>
+        </tr>
+        <tr style="border-top: 2px solid #555;">
+          <td><strong>✨ Lake-Summit-Ticket (2025/26)</strong></td>
+          <td style="font-weight: bold;">€56.00</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="save-money">✅ Save ~€12+ with the Combo — More Worthwhile Than Ever!</td>
         </tr>
       </tbody>
     </table>
