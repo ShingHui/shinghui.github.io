@@ -11,7 +11,7 @@ description: Curious how I hiked Huangshan alone? How to buy the entrance ticket
 
 <style>
 :root {
-  --ink: #1a1208;
+  --ink: #5c3b14;
   --fog: #e8e2d9;
   --mist: #f2ede6;
   --pine: #2d4a2d;
@@ -260,7 +260,7 @@ h2.light em  { color: var(--cloud); }
   color: var(--muted);
   line-height: 1.9;
   margin-bottom: 1.3rem;
-  font-size: 1.02rem;
+  font-size: 18px;
 }
 
 /* ── REVEAL ── */
@@ -306,7 +306,7 @@ h2.light em  { color: var(--cloud); }
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
 }
-.hotel-note { font-size: 0.85rem; color: var(--muted); line-height: 1.7; }
+.hotel-note { font-size: 1.0rem; color: var(--muted); line-height: 1.7; }
 .hotel-price {
   position: absolute;
   top: 1.5rem; right: 2rem;
@@ -368,7 +368,7 @@ h2.light em  { color: var(--cloud); }
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }
-.tip-text { font-size: 0.82rem; color: var(--muted); line-height: 1.65; }
+.tip-text { font-size: 1.0 rem; color: var(--muted); line-height: 1.65; }
 
 /* ── GETTING THERE ── */
 .transport-steps { margin-top: 2rem; }
@@ -400,7 +400,7 @@ h2.light em  { color: var(--cloud); }
   color: var(--pine-light);
   margin-bottom: 0.4rem;
 }
-.step-body p { font-size: 0.88rem; color: var(--muted); line-height: 1.7; }
+.step-body p { font-size: 1.0rem; color: var(--muted); line-height: 1.7; }
 .step-body strong { color: var(--ink); }
 
 /* ── TICKET TABLE ── */
@@ -473,7 +473,7 @@ h2.light em  { color: var(--cloud); }
   padding: 0.5rem 0;
   border-bottom: 1px solid rgba(200,212,192,0.12);
   font-family: 'Space Mono', monospace;
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   color: rgba(200,212,192,0.7);
 }
 .paid-line:last-of-type { border-bottom: none; }
@@ -488,7 +488,7 @@ h2.light em  { color: var(--cloud); }
 }
 .paid-total span {
   font-family: 'Space Mono', monospace;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--cloud);
@@ -503,7 +503,7 @@ h2.light em  { color: var(--cloud); }
 }
 .paid-note {
   margin-top: 1.2rem;
-  font-size: 0.78rem;
+  font-size: 0.9rem;
   color: rgba(200,212,192,0.55);
   line-height: 1.7;
 }
@@ -524,7 +524,7 @@ h2.light em  { color: var(--cloud); }
   margin-bottom: 1rem;
 }
 .story-body {
-  font-size: 0.92rem;
+  font-size: 1.0rem;
   color: var(--ink);
   line-height: 1.85;
 }
@@ -538,7 +538,7 @@ h2.light em  { color: var(--cloud); }
 }
 .warning-eyebrow {
   font-family: 'Space Mono', monospace;
-  font-size: 0.62rem;
+  font-size: 0.9em;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--red);
@@ -726,6 +726,13 @@ h2.light em  { color: var(--cloud); }
   .cursor, .cursor-ring { display: none; }
   .hotel-price { position: static; margin-bottom: 1rem; }
 }
+
+  h2 a[href^="#"],
+  h3 a[href^="#"],
+  h4 a[href^="#"],
+  .anchor,
+  .header-anchor,
+  .anchor-heading { display: none !important; }
 </style>
 
 
@@ -771,7 +778,7 @@ h2.light em  { color: var(--cloud); }
 <section class="section">
   <div class="inner">
     <div class="label reveal">Huangshan · Deep Dive</div>
-    <h2 class="cp-h2 reveal">Everything You Need<br/>to <em>Know</em></h2>
+    <h2 id="everything-you-need" class="cp-h2 reveal">Everything You Need<br/>to <em>Know</em></h2>
 
     <!-- HOTEL CARD -->
     <div class="hotel-card reveal">
@@ -799,7 +806,7 @@ h2.light em  { color: var(--cloud); }
           stroke="rgba(200,212,192,0.3)" stroke-width="8" stroke-linecap="round"/>
       </svg>
       <div class="peak-data">
-        <div class="peak-num" data-target="1864">0</div>
+        <div class="peak-num" data-target="1864">1864</div>
         <div class="peak-unit">m</div>
       </div>
       <div class="peak-name-label">Lotus Peak<br/><span>莲花峰</span></div>
@@ -816,7 +823,7 @@ h2.light em  { color: var(--cloud); }
           stroke="rgba(200,212,192,0.3)" stroke-width="8" stroke-linecap="round"/>
       </svg>
       <div class="peak-data">
-        <div class="peak-num" data-target="1860">0</div>
+        <div class="peak-num" data-target="1860">1860</div>
         <div class="peak-unit">m</div>
       </div>
       <div class="peak-name-label">Bright Summit<br/><span>光明顶</span></div>
@@ -833,7 +840,7 @@ h2.light em  { color: var(--cloud); }
           stroke="rgba(200,212,192,0.25)" stroke-width="8" stroke-linecap="round"/>
       </svg>
       <div class="peak-data">
-        <div class="peak-num" data-target="1829">0</div>
+        <div class="peak-num" data-target="1829">1829</div>
         <div class="peak-unit">m</div>
       </div>
       <div class="peak-name-label">Celestial Capital<br/><span>天都峰</span></div>
@@ -884,7 +891,7 @@ h2.light em  { color: var(--cloud); }
 <section class="section section-fog">
   <div class="inner">
     <div class="label reveal">How to Get There</div>
-    <h2 class="cp-h2 reveal">The Route <em>In</em></h2>
+    <h2 id="the-route" class="cp-h2 reveal">The Route <em>In</em></h2>
 
     <div class="transport-steps">
       <div class="transport-step reveal">
@@ -916,7 +923,7 @@ h2.light em  { color: var(--cloud); }
 <section class="section section-paper">
   <div class="inner">
     <div class="label gold reveal">Ticket Prices · 2025</div>
-    <h2 class="cp-h2 reveal">What It <em>Costs</em></h2>
+    <h2 id="what-it-costs" class="cp-h2 reveal">What It <em>Costs</em></h2>
 
     <table class="ticket-table reveal">
       <thead>
@@ -947,7 +954,8 @@ h2.light em  { color: var(--cloud); }
         <span>Total</span>
         <strong>213 RMB</strong>
       </div>
-      <p class="paid-note">Tickets can be bought via WeChat Mini Program, at the counter on-site, or through Trip.com. Always bring your passport — you'll need it at the gate. As a foreign visitor, always ask about half-price entry.</p>
+      <p class="paid-note">Tickets can be bought via WeChat Mini Program, at the counter on-site, or through Trip.com. Always bring your passport — you'll need it at the gate. As a foreign visitor, always ask about half-price entry.</p> 
+      <p class="cp-p">💡 <a href="/posts/huangshan-tickets/">Step-by-step ticket buying guide with screenshots →</a></p>
     </div>
   </div>
 </section>
@@ -956,7 +964,7 @@ h2.light em  { color: var(--cloud); }
 <section class="section section-stone">
   <div class="inner">
     <div class="label light reveal">Personal Experience</div>
-    <h2 class="cp-h2 light reveal">My Day on<br/><em>the Mountain</em></h2>
+    <h2 id="the-mountain" class="cp-h2 light reveal">My Day on<br/><em>the Mountain</em></h2>
 
     <div class="story-callout reveal" style="border-left-color: var(--cloud); background: rgba(200,212,192,0.06);">
       <div class="story-eyebrow" style="color: var(--cloud); opacity: 0.6;">6 AM → 3 PM · September 2025</div>
@@ -965,7 +973,7 @@ h2.light em  { color: var(--cloud); }
 
     <div class="warning-callout reveal" style="border-left-color: #c07a3a; background: rgba(192,122,58,0.06);">
       <div class="warning-eyebrow" style="color: #c07a3a;">⚠️ My One Regret — Book 天都峰 in Advance</div>
-      <p class="story-body" style="color: rgba(232,226,217,0.75); font-size: 0.9rem;">I didn't pre-book the Celestial Capital Peak (天都峰) timed slot. By the time I reached the entrance at around 12:40 PM, the ticket counter had already closed due to incoming thunderstorms. Weather on the mountain is unpredictable — if 天都峰 is on your list, book the slot the night before, not on the day.</p>
+      <p class="story-body" style="color: rgba(232,226,217,0.75);">I didn't pre-book the Celestial Capital Peak (天都峰) timed slot. By the time I reached the entrance at around 12:40 PM, the ticket counter had already closed due to incoming thunderstorms. Weather on the mountain is unpredictable — if 天都峰 is on your list, book the slot the night before, not on the day.</p>
     </div>
 
     <div class="story-callout reveal" style="border-left-color: var(--stone); background: rgba(122,112,96,0.08); margin-top: 1.5rem;">
@@ -989,6 +997,41 @@ h2.light em  { color: var(--cloud); }
     </div>
   </div>
 </section>
+
+<!-- CLOSING FOOTER -->
+<div style="background: var(--pine); padding: 5rem 5vw; text-align: center; position: relative; overflow: hidden;">
+
+  <!-- Decorative rings -->
+  <div style="position:absolute; top:-60px; left:50%; transform:translateX(-50%); width:300px; height:300px; border-radius:50%; border:1px solid rgba(200,212,192,0.06); pointer-events:none;"></div>
+  <div style="position:absolute; top:-30px; left:50%; transform:translateX(-50%); width:200px; height:200px; border-radius:50%; border:1px solid rgba(200,212,192,0.08); pointer-events:none;"></div>
+
+  <div class="reveal" style="position:relative; z-index:1;">
+    <div style="font-family:'Space Mono',monospace; font-size:0.6rem; letter-spacing:0.3em; text-transform:uppercase; color:rgba(200,212,192,0.4); margin-bottom:1.5rem;">
+      Keep Going
+    </div>
+
+    <p style="font-family:'Playfair Display',serif; font-size:clamp(1.6rem,4vw,2.8rem); font-weight:700; color:#fff; line-height:1.2; margin-bottom:0.8rem;">
+      More to go.<br/>
+      <em style="font-style:italic; color:var(--cloud);">Stay stunned.</em>
+    </p>
+
+    <p style="font-family:'Lora',serif; font-style:italic; font-size:0.95rem; color:rgba(200,212,192,0.55); margin-bottom:3rem; line-height:1.8;">
+      There are more cities, more trails, and more stories waiting.<br/>
+      Explore the blog at your own pace — take your time.
+    </p>
+
+    <!-- Animated dots -->
+    <div style="display:flex; justify-content:center; gap:0.6rem; margin-bottom:3rem;">
+      <span style="width:6px; height:6px; border-radius:50%; background:var(--cloud); opacity:0.4; animation:dotPulse 1.8s ease infinite 0s; display:inline-block;"></span>
+      <span style="width:6px; height:6px; border-radius:50%; background:var(--cloud); opacity:0.4; animation:dotPulse 1.8s ease infinite 0.3s; display:inline-block;"></span>
+      <span style="width:6px; height:6px; border-radius:50%; background:var(--cloud); opacity:0.4; animation:dotPulse 1.8s ease infinite 0.6s; display:inline-block;"></span>
+    </div>
+
+    <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(200,212,192,0.25);">
+      Solo Travel · Malaysia → The World
+    </div>
+  </div>
+</div>
 
 <script>
   window.addEventListener('load', () => {
