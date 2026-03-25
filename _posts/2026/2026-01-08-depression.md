@@ -201,7 +201,7 @@ image:
   <!-- ① Title Panel -->
   <div class="comic-grid">
     <div class="comic-panel panel-full panel-title">
-      <div class="comic-label">Ep.04 Freshman Project</div>
+      <div class="comic-label">Freshman Project</div>
       <h1 class="comic-h1">THE RESILIENCE SHIELD</h1>
       <p style="font-weight: bold; margin-top: 5px;">Does a strong mind block life stress?</p>
     </div>
