@@ -955,7 +955,7 @@ h2.light em  { color: var(--cloud); }
         <strong>213 RMB</strong>
       </div>
       <p class="paid-note">Tickets can be bought via WeChat Mini Program, at the counter on-site, or through Trip.com. Always bring your passport — you'll need it at the gate. As a foreign visitor, always ask about half-price entry.</p> 
-      <p class="cp-p">💡 <a href="/posts/huangshan-tickets/">Step-by-step ticket buying guide with screenshots →</a></p>
+      <p class="cp-p">💡 <a href="/posts/huangshan-ticket/">Step-by-step ticket buying guide with screenshots →</a></p>
     </div>
   </div>
 </section>
