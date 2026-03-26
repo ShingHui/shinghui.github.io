@@ -464,6 +464,43 @@ order: 6
     .honours-row { flex-direction: column; align-items: flex-start; gap: 8px; }
     .honours-right { align-items: flex-start; flex-direction: row; gap: 10px; }
   }
+
+
+  [data-mode="dark"] .portfolio-card {
+    background: #2A2A2A !important;
+    border-color: rgba(255,255,255,0.08) !important;
+  }
+  [data-mode="dark"] .card-content h3,
+  [data-mode="dark"] .card-content h3 a {
+    color: #F0F0F0 !important;
+  }
+  [data-mode="dark"] .card-content p {
+    color: #A0A0A0 !important;
+  }
+  [data-mode="dark"] .card-tag {
+    color: #C8A97A !important;
+  }
+  [data-mode="dark"] .no-img-placeholder {
+    background: linear-gradient(135deg, #2e2b27 0%, #252220 100%) !important;
+  }
+
+/* Fallback: system-level dark mode */
+  @media (prefers-color-scheme: dark) {
+    .portfolio-card {
+      background: #2A2A2A;
+      border-color: rgba(255,255,255,0.08);
+    }
+  .card-content h3,
+  .card-content h3 a {
+    color: #F0F0F0 !important;
+  }
+  .card-content p {
+    color: #A0A0A0 !important;
+  }
+  .card-tag {
+    color: #C8A97A !important;
+  }
+  }
 </style>
 
 

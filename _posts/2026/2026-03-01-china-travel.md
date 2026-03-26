@@ -680,6 +680,122 @@ description: China Apps and Other Useful Info (Expenses/Route)
     .china-post .hero-meta        { gap: 1.2rem; }
     .china-post .gallery-grid { gap: 3px; }
   }
+
+  /* ─── DARK MODE FIX ─────────────────────────────────── */
+[data-mode="dark"] .china-post {
+  --ink:    #F0EDE6;
+  --paper:  #1C1A16;
+  --cream:  #242018;
+  --muted:  #A89880;
+  --border: #3A3428;
+  --rust:   #C8855A;
+  color: #F0EDE6;
+}
+
+/* Section backgrounds */
+[data-mode="dark"] .china-post .cp-section-paper {
+  background: #1C1A16;
+  border-color: #3A3428;
+}
+[data-mode="dark"] .china-post .cp-section-dark {
+  background: #0D0B08;
+}
+
+/* Headings */
+[data-mode="dark"] .china-post .cp-h2 {
+  color: #F0EDE6;
+}
+[data-mode="dark"] .china-post .cp-p {
+  color: #A89880;
+}
+
+/* Pull quote */
+[data-mode="dark"] .china-post .pull-quote {
+  background: rgba(184,134,11,0.08);
+}
+[data-mode="dark"] .china-post .pull-quote p {
+  color: #C8A070;
+}
+
+/* Tips cards */
+[data-mode="dark"] .china-post .tip-card {
+  background: #1E1C18;
+  border-color: #3A3428;
+}
+[data-mode="dark"] .china-post .tip-title {
+  color: #F0EDE6;
+}
+[data-mode="dark"] .china-post .tip-text {
+  color: #A89880;
+}
+
+/* App cards */
+[data-mode="dark"] .china-post .app-card {
+  background: #1E1C18;
+  border-color: #3A3428;
+}
+[data-mode="dark"] .china-post .app-name {
+  color: #F0EDE6;
+}
+[data-mode="dark"] .china-post .app-num {
+  color: #3A3428;
+}
+[data-mode="dark"] .china-post .app-desc {
+  color: #A89880;
+}
+
+/* Cost section */
+[data-mode="dark"] .china-post .cost-big {
+  color: #F0EDE6;
+}
+[data-mode="dark"] .china-post .cost-bar-track {
+  background: #3A3428;
+}
+[data-mode="dark"] .china-post .cost-bar-fill {
+  background: #F0EDE6;
+}
+
+/* Route banner */
+[data-mode="dark"] .china-post .route-banner {
+  background: #0D0B08;
+}
+
+/* Divider */
+[data-mode="dark"] .china-post .cp-divider::before,
+[data-mode="dark"] .china-post .cp-divider::after {
+  background: #3A3428;
+}
+
+/* Story grid caption */
+[data-mode="dark"] .china-post .story-img::after {
+  border-color: rgba(184,134,11,0.2);
+}
+
+[data-mode="dark"] .china-post .tl-body h3 {
+  color: #F0EDE6 !important;
+}
+
+[data-mode="dark"] .china-post .tl-body p {
+  color: rgba(240, 237, 230, 0.65) !important;
+}
+
+/* Fallback: system dark mode */
+@media (prefers-color-scheme: dark) {
+  .china-post {
+    --ink:    #F0EDE6;
+    --paper:  #1C1A16;
+    --muted:  #A89880;
+    --border: #3A3428;
+    --rust:   #C8855A;
+    color: #F0EDE6;
+  }
+  .china-post .cp-h2      { color: #F0EDE6; }
+  .china-post .tip-card   { background: #1E1C18; border-color: #3A3428; }
+  .china-post .tip-title  { color: #F0EDE6; }
+  .china-post .app-card   { background: #1E1C18; border-color: #3A3428; }
+  .china-post .app-name   { color: #F0EDE6; }
+  .china-post .cost-big   { color: #F0EDE6; }
+}
 </style>
 
 <div class="china-post">

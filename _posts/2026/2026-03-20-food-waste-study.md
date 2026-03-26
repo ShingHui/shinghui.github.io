@@ -5,9 +5,10 @@ date: 2026-03-20 00:00:00 +0800
 categories: [Portfolio]
 tags: [Consumer Behavior, Social Psychology, Market Research, ESG]
 toc: false
+description: A consumer psychology study analyzing the cognitive drivers and barriers behind purchasing near-expired food to inform sustainable retail strategies.
 image:
   path: /assets/img/portfolio/near-expiry-products.jpeg
-  alt: Social Psychology Case Study x NCKU x 2024.02-2024.06
+  alt: Social Psychology Case Study x NCKU x 2024
 ---
 
 <style>
@@ -175,7 +176,7 @@ image:
 
   /* ══ CONTEXT PARAGRAPH ══ */
   .fi-context {
-    font-size: 1.0rem;
+    font-size: 0.95rem;
     line-height: 1.8;
     border-left: 3px solid var(--fi-moss);
     padding-left: 20px;
@@ -285,7 +286,7 @@ image:
   }
   .fi-theory-name {
     font-family: var(--fi-sans);
-    font-size: 0.88rem;
+    font-size: 0.78rem;
     font-weight: 600;
     opacity: 0.6;
     line-height: 1.4;
@@ -293,7 +294,7 @@ image:
   }
   .fi-theory-tag {
     font-family: var(--fi-sans);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -306,7 +307,7 @@ image:
   .fi-theory-right {}
   .fi-theory-mechanism {
     font-family: var(--fi-sans);
-    font-size: 0.92rem;
+    font-size: 0.82rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -314,19 +315,19 @@ image:
     margin-bottom: 6px;
   }
   .fi-theory-explain {
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     line-height: 1.7;
     margin-bottom: 12px;
     padding-bottom: 12px;
     border-bottom: 1px dashed var(--fi-border);
   }
   .fi-theory-market {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.65;
   }
   .fi-theory-market .market-label {
     font-family: var(--fi-sans);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -353,7 +354,7 @@ image:
   }
   .fi-brand-label {
     font-family: var(--fi-sans);
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     font-weight: 700;
     letter-spacing: 0.18em;
     text-transform: uppercase;
@@ -371,14 +372,14 @@ image:
     gap: 14px;
   }
   .fi-brand-case {
-    background: rgba(255,255,255,0.5);
+    background: rgba(128,128,128,0.08);
     border: 1px solid var(--fi-border);
     border-radius: 8px;
     padding: 16px 18px;
   }
   .fi-brand-case-name {
     font-family: var(--fi-sans);
-    font-size: 0.82rem;
+    font-size: 0.72rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -386,12 +387,12 @@ image:
     margin-bottom: 6px;
   }
   .fi-brand-case-title {
-    font-size: 1.0rem;
+    font-size: 0.92rem;
     font-weight: 600;
     margin-bottom: 6px;
   }
   .fi-brand-case-desc {
-    font-size: 0.92rem;
+    font-size: 0.82rem;
     line-height: 1.6;
     opacity: 0.72;
   }
@@ -400,7 +401,7 @@ image:
     background: rgba(58,90,64,0.07);
     border-radius: 8px;
     padding: 14px 18px;
-    font-size: 0.98rem;
+    font-size: 0.88rem;
     line-height: 1.6;
     border-left: 3px solid var(--fi-moss);
   }
@@ -434,13 +435,13 @@ image:
   .fi-rec-content {}
   .fi-rec-title {
     font-family: var(--fi-sans);
-    font-size: 1.0rem;
+    font-size: 0.92rem;
     font-weight: 700;
     margin-bottom: 4px;
   }
   .fi-rec-theory {
     font-family: var(--fi-sans);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -448,7 +449,7 @@ image:
     margin-bottom: 8px;
   }
   .fi-rec-desc {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     line-height: 1.65;
     opacity: 0.75;
   }
@@ -463,7 +464,7 @@ image:
   }
   .fi-research-label {
     font-family: var(--fi-sans);
-    font-size: 0.78rem;
+    font-size: 0.68rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: #a8c9a0;
@@ -491,7 +492,7 @@ image:
   }
   .fi-research-cell-label {
     font-family: var(--fi-sans);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -500,7 +501,7 @@ image:
   }
   .fi-research-cell-val {
     font-family: var(--fi-sans);
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: rgba(240,237,230,0.85);
     line-height: 1.55;
   }
@@ -528,7 +529,7 @@ image:
     border-radius: 0 12px 12px 0;
     padding: 28px 32px;
     margin-top: 8px;
-    font-size: 1.0rem;
+    font-size: 0.95rem;
     line-height: 1.8;
   }
   .fi-conclusion-label {
@@ -542,7 +543,7 @@ image:
   }
   .fi-conclusion-quote {
     font-family: var(--fi-serif);
-    font-size: 1.0rem;
+    font-size: 1.2rem;
     font-weight: 700;
     font-style: italic;
     line-height: 1.45;
@@ -568,7 +569,7 @@ image:
 
   <!-- ══ HERO ══ -->
   <div class="fi-hero">
-    <div class="fi-hero-tag"> Social Psychology · Consumer Insight</div>
+    <div class="fi-hero-tag">Social Psychology · Consumer Insight</div>
     <h1>The Psychology of <em>Near-Expired</em> Food</h1>
     <p class="fi-hero-sub">
       A consumer behaviour literature review examining why shoppers hesitate at the discount shelf — and how retailers can change that.
@@ -836,7 +837,7 @@ image:
     <div class="fi-research-label">// From Literature Review → Research Design</div>
     <div class="fi-research-title">What this desk research cannot answer — and how I would answer it next</div>
 
-    <p style="font-size:1.0rem; color:rgba(240,237,230,0.75); line-height:1.7; margin:0 0 20px;">
+    <p style="font-size:0.9rem; color:rgba(240,237,230,0.75); line-height:1.7; margin:0 0 20px;">
       This literature review surfaces the psychological mechanisms behind near-expired food purchase behaviour — but it cannot tell us <em>which mechanism dominates</em> for specific consumer segments in Taiwan's convenience store context. A primary research study is needed to quantify decision weights and identify the highest-leverage intervention points.
     </p>
 

@@ -26,9 +26,16 @@ description: Curious how I hiked Huangshan alone? How to buy the entrance ticket
   --paper: #f5f0e8;
 }
 
+/* ── HIDE ANCHOR HASH LINKS ── */
+h2 a[href^="#"],
+h3 a[href^="#"],
+h4 a[href^="#"],
+.anchor,
+.header-anchor,
+.anchor-heading { display: none !important; }
+
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
 
 /* ── CURSOR ── */
 .cursor {
@@ -66,7 +73,7 @@ html { scroll-behavior: smooth; }
 
 /* ── HERO ── */
 .hero {
-  min-height: 100vh;
+  min-height: 60vh;
   position: relative;
   display: grid;
   place-items: center;
@@ -77,7 +84,7 @@ html { scroll-behavior: smooth; }
 .hero-bg {
   position: absolute; inset: 0;
   background: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?w=1600&q=80') center/cover no-repeat;
-  opacity: 0;
+  opacity: 0.35;
   transform: scale(1.1);
   transition: opacity 2s ease, transform 8s cubic-bezier(0.25,1,0.5,1);
 }
@@ -241,7 +248,6 @@ html { scroll-behavior: smooth; }
   color: var(--pine-light);
   margin-bottom: 0.7rem;
 }
-.label.light { color: var(--cloud); }
 .label.gold   { color: var(--gold); }
 
 h2.cp-h2 {
@@ -306,7 +312,7 @@ h2.light em  { color: var(--cloud); }
   letter-spacing: 0.08em;
   margin-bottom: 1rem;
 }
-.hotel-note { font-size: 1.0rem; color: var(--muted); line-height: 1.7; }
+.hotel-note { font-size: 18px; color: var(--muted); line-height: 1.7; }
 .hotel-price {
   position: absolute;
   top: 1.5rem; right: 2rem;
@@ -368,7 +374,7 @@ h2.light em  { color: var(--cloud); }
   margin-bottom: 0.5rem;
   line-height: 1.3;
 }
-.tip-text { font-size: 1.0 rem; color: var(--muted); line-height: 1.65; }
+.tip-text { font-size: 18px; color: var(--muted); line-height: 1.65; }
 
 /* ── GETTING THERE ── */
 .transport-steps { margin-top: 2rem; }
@@ -400,7 +406,7 @@ h2.light em  { color: var(--cloud); }
   color: var(--pine-light);
   margin-bottom: 0.4rem;
 }
-.step-body p { font-size: 1.0rem; color: var(--muted); line-height: 1.7; }
+.step-body p { font-size: 18px; color: var(--muted); line-height: 1.7; }
 .step-body strong { color: var(--ink); }
 
 /* ── TICKET TABLE ── */
@@ -503,7 +509,7 @@ h2.light em  { color: var(--cloud); }
 }
 .paid-note {
   margin-top: 1.2rem;
-  font-size: 0.9rem;
+  font-size: 18px;
   color: rgba(200,212,192,0.55);
   line-height: 1.7;
 }
@@ -524,7 +530,7 @@ h2.light em  { color: var(--cloud); }
   margin-bottom: 1rem;
 }
 .story-body {
-  font-size: 1.0rem;
+  font-size: 18px;
   color: var(--ink);
   line-height: 1.85;
 }
@@ -712,6 +718,7 @@ h2.light em  { color: var(--cloud); }
   white-space: nowrap;
 }
 
+
 /* ── KEYFRAMES ── */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
@@ -726,13 +733,6 @@ h2.light em  { color: var(--cloud); }
   .cursor, .cursor-ring { display: none; }
   .hotel-price { position: static; margin-bottom: 1rem; }
 }
-
-  h2 a[href^="#"],
-  h3 a[href^="#"],
-  h4 a[href^="#"],
-  .anchor,
-  .header-anchor,
-  .anchor-heading { display: none !important; }
 </style>
 
 
@@ -955,7 +955,7 @@ h2.light em  { color: var(--cloud); }
         <strong>213 RMB</strong>
       </div>
       <p class="paid-note">Tickets can be bought via WeChat Mini Program, at the counter on-site, or through Trip.com. Always bring your passport — you'll need it at the gate. As a foreign visitor, always ask about half-price entry.</p> 
-      <p class="cp-p">💡 <a href="/posts/huangshan-ticket/">Step-by-step ticket buying guide with screenshots →</a></p>
+      <p class="cp-p" style="color:rgba(200,212,192,0.55); margin-top:1rem;">💡 <a href="/posts/huangshan-tickets/" style="color:var(--cloud);">Step-by-step ticket buying guide with screenshots →</a></p>
     </div>
   </div>
 </section>
@@ -963,8 +963,8 @@ h2.light em  { color: var(--cloud); }
 <!-- MY DAY ON THE MOUNTAIN -->
 <section class="section section-stone">
   <div class="inner">
-    <div class="label light reveal">Personal Experience</div>
-    <h2 id="the-mountain" class="cp-h2 light reveal">My Day on<br/><em>the Mountain</em></h2>
+    <div class="label gold reveal">Personal Experience</div>
+    <h2 id="the-mountain" class="cp-h2 reveal">My Day on<br/><em>the Mountain</em></h2>
 
     <div class="story-callout reveal" style="border-left-color: var(--cloud); background: rgba(200,212,192,0.06);">
       <div class="story-eyebrow" style="color: var(--cloud); opacity: 0.6;">6 AM → 3 PM · September 2025</div>
@@ -1020,11 +1020,10 @@ h2.light em  { color: var(--cloud); }
       Explore the blog at your own pace — take your time.
     </p>
 
-    <!-- Animated dots -->
-    <div style="display:flex; justify-content:center; gap:0.6rem; margin-bottom:3rem;">
-      <span style="width:6px; height:6px; border-radius:50%; background:var(--cloud); opacity:0.4; animation:dotPulse 1.8s ease infinite 0s; display:inline-block;"></span>
-      <span style="width:6px; height:6px; border-radius:50%; background:var(--cloud); opacity:0.4; animation:dotPulse 1.8s ease infinite 0.3s; display:inline-block;"></span>
-      <span style="width:6px; height:6px; border-radius:50%; background:var(--cloud); opacity:0.4; animation:dotPulse 1.8s ease infinite 0.6s; display:inline-block;"></span>
+    <div style="display:flex;justify-content:center;gap:0.6rem;margin-bottom:3rem;">
+      <span style="width:6px;height:6px;border-radius:50%;background:var(--cloud);opacity:0.4;animation:cp-dotPulse 1.8s ease infinite 0s;display:inline-block;"></span>
+      <span style="width:6px;height:6px;border-radius:50%;background:var(--cloud);opacity:0.4;animation:cp-dotPulse 1.8s ease infinite 0.3s;display:inline-block;"></span>
+      <span style="width:6px;height:6px;border-radius:50%;background:var(--cloud);opacity:0.4;animation:cp-dotPulse 1.8s ease infinite 0.6s;display:inline-block;"></span>
     </div>
 
     <div style="font-family:'Space Mono',monospace; font-size:0.62rem; letter-spacing:0.2em; text-transform:uppercase; color:rgba(200,212,192,0.25);">
@@ -1054,7 +1053,7 @@ h2.light em  { color: var(--cloud); }
     requestAnimationFrame(animRing);
   })();
 
-  document.querySelectorAll('.tip-card, .transport-step, .gallery-item, a').forEach(el => {
+  document.querySelectorAll('.tip-card, .transport-step, a').forEach(el => {
     el.addEventListener('mouseenter', () => ring.classList.add('hovered'));
     el.addEventListener('mouseleave', () => ring.classList.remove('hovered'));
   });
