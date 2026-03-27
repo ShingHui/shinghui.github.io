@@ -1,0 +1,33 @@
+<div id="waline-comment" class="mt-5"></div>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline-comment',
+    serverURL: 'https://waline-ecru-six-49.vercel.app',
+    lang: 'en',
+    dark: 'auto',
+    login: 'disable',
+    pageview: true,
+    comment: true,
+    /* Email & Website optional */
+    requiredMeta: ['nick'],
+    /* Custom placeholder */
+    locale: {
+      placeholder: 'Hola! Write a comment here (Fill in the email to receive reply notifications)',
+      reactionTitle: 'What do you think?',
+    },
+    /* Reaction buttons */
+    reaction: [
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png',
+    ],
+    /* Emoji picker */
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+      'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+    ],
+  });
+</script>
