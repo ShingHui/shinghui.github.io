@@ -1,0 +1,129 @@
+<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 9999999;pointer-events: none;"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+<script>
+  (function() {
+    var canvasEl = document.querySelector('.fireworks');
+    if (!canvasEl) return;
+    var ctx = canvasEl.getContext('2d');
+    var numberOfParticules = 10; 
+
+    // 🌸 Design Your Own Fav Color
+    var colors = [
+      'rgba(255,182,185,.9)', // blossom pink
+      'rgba(250,227,217,.9)', // peach
+      'rgba(187,222,214,.9)', // mint green
+      'rgba(138,198,209,.9)'  // sky blue
+    ];
+
+    function setParticuleDirection(p) {
+      var angle = anime.random(0, 360) * Math.PI / 180;
+      var value = anime.random(50, 180);
+      var radius = [-1, 1][anime.random(0, 1)] * value;
+      return {
+        x: p.x + radius * Math.cos(angle),
+        y: p.y + radius * Math.sin(angle)
+      };
+    }
+
+    function createParticule(x, y) {
+      var p = {};
+      p.x = x;
+      p.y = y;
+      p.color = colors[anime.random(0, colors.length - 1)];
+      p.radius = anime.random(5, 10); // adjust particle radius
+      p.endPos = setParticuleDirection(p);
+      p.draw = function() {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
+        ctx.fillStyle = p.color;
+        ctx.fill();
+      };
+      return p;
+    }
+
+    // Ripple
+    function createCircle(x, y) {
+      var p = {};
+      p.x = x;
+      p.y = y;
+      p.color = '#FFF';
+      p.radius = 20;
+      p.alpha = 0.5;
+      p.lineWidth = 6;
+      p.draw = function() {
+        ctx.globalAlpha = p.alpha;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, true);
+        ctx.lineWidth = p.lineWidth;
+        ctx.strokeStyle = p.color;
+        ctx.stroke();
+        ctx.globalAlpha = 1.0; // opacity
+      };
+      return p;
+    }
+
+    function renderParticule(anim) {
+      for (var i = 0; i < anim.animatables.length; i++) {
+        anim.animatables[i].target.draw();
+      }
+    }
+
+    function animateParticules(x, y) {
+      var circle = createCircle(x, y);
+      var particules = [];
+      for (var i = 0; i < numberOfParticules; i++) {
+        particules.push(createParticule(x, y));
+      }
+      
+ 
+      anime.timeline().add({
+        targets: particules,
+        x: function(p) { return p.endPos.x; },
+        y: function(p) { return p.endPos.y; },
+        radius: 0.1,
+        duration: anime.random(1200, 1800),
+        easing: 'easeOutExpo',
+        update: renderParticule,
+        offset: 0
+      }).add({
+        targets: circle,
+        radius: anime.random(80, 160),
+        lineWidth: 0,
+        alpha: {
+          value: 0,
+          easing: 'linear',
+          duration: anime.random(600, 800),
+        },
+        duration: anime.random(1200, 1800),
+        easing: 'easeOutExpo',
+        update: renderParticule,
+        offset: 0
+      });
+    }
+
+    var render = anime({
+      duration: Infinity,
+      update: function() {
+        ctx.clearRect(0, 0, canvasEl.width, canvasEl.height);
+      }
+    });
+
+    document.addEventListener('mousedown', function(e) {
+      if (e.target.closest('#sidebar')) return;
+      
+      render.play();
+      animateParticules(e.clientX, e.clientY);
+    }, false);
+
+    function setCanvasSize() {
+      canvasEl.width = window.innerWidth * 2;
+      canvasEl.height = window.innerHeight * 2;
+      canvasEl.style.width = window.innerWidth + 'px';
+      canvasEl.style.height = window.innerHeight + 'px';
+      canvasEl.getContext('2d').scale(2, 2);
+    }
+
+    setCanvasSize();
+    window.addEventListener('resize', setCanvasSize, false);
+  })();
+</script>

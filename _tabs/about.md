@@ -270,7 +270,7 @@ order: 4
       <div class="stat-label">Countries lived</div>
     </div>
     <div>
-      <div class="stat-num"><span class="count-up" data-target="17">0</span>+</div>
+      <div class="stat-num"><span class="count-up" data-target="21">0</span>+</div>
       <div class="stat-label">Countries explored</div>
     </div>
   </div>
@@ -292,7 +292,6 @@ order: 4
       <span class="fp-country">Poland</span>
       <span class="fp-city">Kraków</span>
     </div>
-    <!-- Add more countries you've lived in below -->
   </div>
 
   <div class="fp-group-label">✦ Explored</div>
@@ -309,7 +308,6 @@ order: 4
     <div class="fp-card"><span class="fp-flag">🇨🇿</span><span class="fp-country">Czechia</span></div>
     <div class="fp-card"><span class="fp-flag">🇸🇰</span><span class="fp-country">Slovakia</span></div>
     <div class="fp-card"><span class="fp-flag">🇩🇰</span><span class="fp-country">Denmark</span></div>
-    <!-- ↑ Edit/add your actual countries here -->
   </div>
 </div>
 

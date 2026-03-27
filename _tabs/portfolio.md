@@ -118,16 +118,21 @@ order: 6
   .portfolio-hero-right { position: relative; flex-shrink: 0; }
 
   .portfolio-photo-card {
-    width: 260px;
+    width: 300px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 32px rgba(0,0,0,0.12);
   }
+  
   .portfolio-photo-card img {
-    width: 100%;
-    height: 320px;
+    width: 100% ;
+    height: 400px;
     object-fit: cover;
+    object-position: center top; 
+    margin: 0;   
+    padding: 0;
     display: block;
+    border-radius: 0; 
   }
 
   .portfolio-status-badge {
@@ -290,7 +295,6 @@ order: 6
   .edu-detail-light  { font-family: var(--ff-sans); font-size: .85rem; color: var(--muted); line-height: 1.75; }
   .edu-detail-light strong { color: var(--text); font-weight: 700; }
 
-  /* ✅ NEW: skill pillars row inside edu card */
   .edu-pillars {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -527,18 +531,23 @@ order: 6
   </div>
 
   <div class="portfolio-hero-right">
-    <div class="portfolio-photo-card">
-      <img src="/assets/lib/DSC00850.JPG" alt="Angel">
+   <div class="portfolio-photo-card" style="
+      background-image: url('/assets/img/portfolio/me.JPG'); 
+      background-size: cover; 
+      background-position: center top; 
+      height: 400px; 
+      width: 100%;">
     </div>
     <div class="portfolio-status-badge">
       <div class="status-dot"></div>
       <div class="status-text">
-        <strong>Currently in Taiwan</strong>
-        <span>NCKU · Psychology</span>
+        <strong>Available for work</strong>
+        <span>Behavioral Therapist/Special Needs Therapist</span>
       </div>
     </div>
   </div>
 </div>
+
 
 <hr class="portfolio-divider">
 
@@ -835,6 +844,35 @@ order: 6
   </div>
 </div>
 
+<div class="xp-block">
+  <div class="xp-item" onclick="toggleXp(this)">
+    <div class="xp-header">
+      <div class="xp-info">
+        <span class="xp-role">Advocate & Event Coordinator</span>
+        <span class="xp-org">Mental Health First Aid (MHFA) Course x NCKU Nursing Department</span>
+      </div>
+      <div class="xp-btn"><svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></div>
+    </div>
+    <div class="xp-details">
+      <div class="xp-meta">
+        <span>09.2022 — 01.2023</span>
+        <span class="xp-meta-sep">·</span>
+        <span>Tainan, Taiwan</span>
+      </div>
+      <p class="xp-desc">
+        ● <strong>Initiated</strong> a campus-wide mental health advocacy campaign, "Mental Health First Aid," integrating clinical narratives from individuals recovering from bipolar disorder and schizophrenia to destigmatize mental illness and promote psychological well-being.<br><br>
+        ● <strong>Launched</strong> the <strong> "Stress Exchange Box,"</strong> an anonymous interactive activity that successfully engaged 27 participants to share personal vulnerabilities and practice empathy by providing positive, written psychological support to peers.<br><br>
+        ● <strong>Directed</strong> an interactive "Mental Health Myths & Facts" quiz for university students and community members. Effectively educated participants on mental illness treatments, symptom identification, and the true meaning of clinical "recovery."
+      </p>
+      <div class="xp-tags">
+        <span class="xp-tag">ALGEE Framework</span>
+        <span class="xp-tag">Crisis Awareness</span>
+        <span class="xp-tag">Psychoeducation</span>
+        <span class="xp-tag">Empathy & Active Listening</span>
+      </div>
+    </div>
+  </div>
+</div>
 
 <span class="cv-section-label">Honours &amp; Awards</span>
 
