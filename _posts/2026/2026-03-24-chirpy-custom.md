@@ -146,7 +146,7 @@ background_animation: true
 
 ## Adding the Mouse Particles Component
 
-I took the design reference from [@D-Sketon's blog](d-sketon.github.io/mouse-firework). Thanks for his amazing contribution! Based on that, I added a dynamic Mouse Fireworks effects to my site.
+I took the design reference from [@D-Sketon's blog](https://d-sketon.github.io/mouse-firework/). Thanks for his amazing contribution! Based on that, I added a dynamic Mouse Fireworks effects to my site.
 
 ### 1. Create the Mouse Effect Component
 
