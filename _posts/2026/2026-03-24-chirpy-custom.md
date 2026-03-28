@@ -320,4 +320,128 @@ Then update the text colors to ensure readability against your new background. T
 ```
 {: file="assets/css/jekyll-theme-chirpy.scss"}
 
+## Adding a Comment Section
+
+Most readers today are reluctant to sign up for an account just to leave a comment. Giscus requires a GitHub account, which creates unnecessary friction for non-technical visitors. After exploring alternatives, I settled on Waline, an open-source comment system that supports anonymous commenting, nested replies, emoji reactions, and pageview tracking, all with a clean modern UI.
+
+The overall architecture looks like this: 
+
+Reader → Vercel (Waline server) → Supabase (database)
+              ↑
+        Jekyll Chirpy frontend
+
+
+### Step 1: Initialise the Supabase Database
+
+Sign up at supabase.com using your GitHub account and note down your database password. Then open your project, go to **SQL Editor → New Query**, paste the following, and click **Run**:
+
+```sql
+/* SQL Database*/
+CREATE TABLE IF NOT EXISTS wl_Comment (
+  id BIGSERIAL PRIMARY KEY,
+  "user_id" BIGINT, "comment" TEXT, "ip" VARCHAR(100),
+  "link" VARCHAR(255), "mail" VARCHAR(255), "nick" VARCHAR(255),
+  "pid" BIGINT, "rid" BIGINT, "sticky" BOOLEAN,
+  "status" VARCHAR(50) DEFAULT 'approved', "like" BIGINT, "ua" TEXT,
+  "url" VARCHAR(255), "referrer" VARCHAR(255),
+  "createdAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  "updatedAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS wl_Counter (
+  id BIGSERIAL PRIMARY KEY,
+  "time" BIGINT, "reaction0" BIGINT, "reaction1" BIGINT,
+  "reaction2" BIGINT, "reaction3" BIGINT, "reaction4" BIGINT,
+  "reaction5" BIGINT, "reaction6" BIGINT, "reaction7" BIGINT,
+  "reaction8" BIGINT, "url" VARCHAR(255),
+  "createdAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  "updatedAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS wl_Users (
+  id BIGSERIAL PRIMARY KEY,
+  "display_name" VARCHAR(255), "email" VARCHAR(255),
+  "password" VARCHAR(255), "type" VARCHAR(50), "url" VARCHAR(255),
+  "avatar" VARCHAR(255), "github" VARCHAR(255), "twitter" VARCHAR(255),
+  "facebook" VARCHAR(255), "google" VARCHAR(255), "weibo" VARCHAR(255),
+  "qq" VARCHAR(255), "2fa" VARCHAR(255), "label" VARCHAR(255),
+  "createdAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
+  "updatedAt" TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
+);
+```
+Once you see Success, you're done ✅
+
+### Step 2: Retrieve Your Connection String
+
+Go to **Project Settings → Database → Connection string**, select **Transaction Pooler** and **URI** format. Copy the string and replace `[YOUR-PASSWORD]` with your actual database password.
+
+>Use Transaction Pooler (port 6543), not Direct Connection (port 5432). Vercel Serverless Functions require short-lived pooled connections.
+{: .prompt-warning }
+
+### Step 3: Deploy Waline on Vercel
+
+Sign up at [vercel.com](https://vercel.com/) your GitHub account, then click the link below to clone the Waline template:
+
+👉 [Deploy Waline to Vercel](https://vercel.com/new/clone?repository-url=https://github.com/walinejs/waline/tree/main/example)
+
+Before clicking Deploy, add these environment variables:
+
+| Key | Value |
+|------|-------|
+| `PG_HOST` | your Supabase pooler host |
+| `PG_PORT` | `6543` |
+| `PG_DB` | `postgres` |
+| `PG_USER` | `postgres.your-project-ref` |
+| `PG_PASSWORD` | your database password |
+| `PG_SSL` | `true` |
+
+Once deployed, Vercel will give you a URL like `https://your-waline.vercel.app` — this is your `serverURL`.
+
+### Step 4: Integrate with Jekyll Chirpy
+
+Create `_includes/waline.html` with the following:
+
+```html
+<div id="waline-comment" class="mt-5"></div>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+<script type="module">
+  import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+  init({
+    el: '#waline-comment',
+    serverURL: 'https://your-waline.vercel.app', /* replace with yours */
+    lang: 'en',
+    dark: 'auto',
+    login: 'disable',             /* allow anonymous comments */
+    pageview: true,
+    comment: true,
+    requiredMeta: ['nick'],       /* only name is required */
+    locale: {
+      placeholder: 'Leave a comment! (Add your email to get reply notifications)',
+      reactionTitle: 'What do you think?',
+    },
+    reaction: [
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_heart_eyes.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_joy.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_dog_consider.png',
+      'https://unpkg.com/@waline/emojis@1.1.0/weibo/weibo_sob.png',
+    ],
+    emoji: [
+      'https://unpkg.com/@waline/emojis@1.2.0/weibo',
+      'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
+    ],
+  });
+</script>
+```
+{: file="_includes/waline.html"}
+
+Then include it at the bottom of `_layouts/post.html`:
+
+```html
+{% raw %}{% include waline.html %}{% endraw %}
+```
+{: file="_layouts/post.html"}
+
+>**Troubleshooting**: If you see `500: FUNCTION_INVOCATION_FAILED`, check your Vercel logs. The two most common causes are an incorrect connection string or a Node.js version mismatch — try setting the runtime to **Node.js 20.x** under **Settings** → **General**. (or Ask Claude for any issues)
+{: .prompt-warning }
+
+For more emoji options, refer to the [Waline Emoji documentation](https://waline.js.org/en/guide/features/emoji.html).
+
 
