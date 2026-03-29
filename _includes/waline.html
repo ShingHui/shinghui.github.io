@@ -2,7 +2,6 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@waline/client@v3/dist/waline.css"/>
 <script type="module">
   import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
-  import { pageviewCount } from 'https://unpkg.com/@waline/client@v3/dist/pageview.js';
 
   init({
     el: '#waline-comment',
@@ -10,7 +9,6 @@
     lang: 'en',
     dark: 'auto',
     login: 'disable',
-    pageview: true,
     comment: true,
     path: window.location.pathname,
     requiredMeta: ['nick'],
@@ -28,10 +26,5 @@
       'https://unpkg.com/@waline/emojis@1.2.0/weibo',
       'https://unpkg.com/@waline/emojis@1.2.0/bilibili',
     ],
-  });
-
-  pageviewCount({
-    serverURL: 'https://waline-ecru-six-49.vercel.app',
-    path: window.location.pathname,
   });
 </script>
