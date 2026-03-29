@@ -39,7 +39,7 @@ order: 4
 /* ── Body prose ── */
 .about-prose {
   font-family: 'DM Sans', sans-serif;
-  font-size: 1.02rem;
+  font-size: 1.12rem;
   line-height: 1.8;
   color: inherit;
   max-width: 660px;

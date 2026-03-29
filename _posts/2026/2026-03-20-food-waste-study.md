@@ -7,7 +7,7 @@ tags: [Consumer Behavior, Social Psychology, Market Research, ESG]
 toc: false
 description: A consumer psychology study analyzing the cognitive drivers and barriers behind purchasing near-expired food to inform sustainable retail strategies.
 image:
-  path: /assets/img/portfolio/near-expiry-products.jpeg
+  path: /assets/img/portfolio/near-expiry-products.webp
   alt: Social Psychology Case Study x NCKU x 2024
 ---
 

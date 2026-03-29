@@ -29,7 +29,7 @@ github:
   username: shinghui # change to your GitHub username
 
 linkedin:
-  url:"https://www.linkedin.com/in/shing-hui-wong-a165813a0/"
+  url: "https://www.linkedin.com/in/shing-hui-wong-a165813a0/"
 
 social:
   # Change to your full name.
@@ -99,7 +99,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /assets/lib/DSC00850.JPG
+avatar: /assets/lib/me.webp
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

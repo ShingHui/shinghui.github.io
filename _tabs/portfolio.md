@@ -75,7 +75,7 @@ order: 6
   }
   .portfolio-bio {
     font-family: var(--ff-sans);
-    font-size: 1rem;
+    font-size: 1.12rem;
     line-height: 1.75;
     color: var(--muted);
     max-width: 480px;
@@ -160,7 +160,7 @@ order: 6
 
   .cv-section-label {
     font-family: var(--ff-sans);
-    font-size: .75rem;
+    font-size: .85rem;
     text-transform: uppercase;
     letter-spacing: .14em;
     font-weight: 700;
@@ -233,7 +233,7 @@ order: 6
     padding-top: 14px; margin-bottom: 12px;
   }
   .xp-meta-sep { opacity: .35; }
-  .xp-desc { font-family: var(--ff-sans); font-size: .88rem; line-height: 1.75; color: var(--muted); margin-bottom: 16px; }
+  .xp-desc { font-family: var(--ff-sans); font-size: 1.02rem; line-height: 1.75; color: var(--muted); margin-bottom: 16px; }
   .xp-desc strong { color: var(--text); font-weight: 700; }
   .xp-desc em     { font-style: italic; }
 
@@ -255,7 +255,7 @@ order: 6
   .edu-section { margin: 3rem 0 2.5rem; }
   .edu-section .cv-section-label { margin-bottom: 0.5rem; }
   .edu-section-title {
-    font-family: var(--ff-serif); font-size: 1.9rem; font-weight: 400;
+    font-family: var(--ff-serif); font-size: 1.5rem; font-weight: 400;
     color: var(--text); text-align: center; margin-bottom: 2rem; line-height: 1.2;
   }
   .edu-stack { display: flex; flex-direction: column; gap: 16px; }
