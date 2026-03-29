@@ -37,30 +37,6 @@ h4 a[href^="#"],
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
-/* ── CURSOR ── */
-.cursor {
-  width: 10px; height: 10px;
-  background: var(--pine-light);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none;
-  z-index: 9999;
-  mix-blend-mode: multiply;
-}
-.cursor-ring {
-  width: 32px; height: 32px;
-  border: 1px solid var(--pine-light);
-  border-radius: 50%;
-  position: fixed; top: 0; left: 0;
-  pointer-events: none;
-  z-index: 9998;
-  transition: width 0.3s, height 0.3s, border-color 0.3s;
-}
-.cursor-ring.hovered {
-  width: 52px; height: 52px;
-  border-color: var(--gold);
-}
-
 /* ── PROGRESS ── */
 .progress-bar {
   position: fixed; top: 0; left: 0;
@@ -736,8 +712,6 @@ h2.light em  { color: var(--cloud); }
 </style>
 
 
-<div class="cursor" id="cursor"></div>
-<div class="cursor-ring" id="cursorRing"></div>
 <div class="progress-bar" id="progressBar"></div>
 
 <!-- HERO -->
@@ -1036,10 +1010,6 @@ h2.light em  { color: var(--cloud); }
   window.addEventListener('load', () => {
     document.getElementById('heroBg').classList.add('loaded');
   });
-
-  const cursor = document.getElementById('cursor');
-  const ring   = document.getElementById('cursorRing');
-  let mx = 0, my = 0, rx = 0, ry = 0;
 
   const bar = document.getElementById('progressBar');
   window.addEventListener('scroll', () => {
