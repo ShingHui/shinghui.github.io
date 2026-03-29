@@ -112,3 +112,11 @@
 #sidebar ul li.nav-item a.nav-link {
     color: #ffffff;
 }
+
+/* Mobile font size fix */
+@media (max-width: 849px) {
+  .content {
+    font-size: 18px;
+    line-height: 1.75;
+  }
+}
