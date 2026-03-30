@@ -520,9 +520,7 @@ order: 6
     <h1 class="portfolio-greeting">Hi, I'm</h1>
     <h1 class="portfolio-name">Angel.</h1>
     <p class="portfolio-bio">
-      A psychology graduate from National Cheng Kung University (NCKU), Taiwan,
-      with a passion for photography and visual storytelling. I enjoy capturing
-      moments through travel and transforming ideas into meaningful visual experiences.
+    A psychology graduate from NCKU who believes understanding human behaviour and telling compelling stories are two sides of the same coin. By day I research minds. By night I chase light with a camera. This space is where both worlds meet
     </p>
     <div class="portfolio-buttons">
       <a href="/assets/apply/Resume-Wong-Shing-Hui.pdf" class="btn-primary">Download Resume</a>
