@@ -2,7 +2,7 @@
 title: "How to Book a China High-Speed Rail Ticket on 12306"
 date: 2026-03-30 00:00:00 +0800
 categories: [Destination, China]
-tags: [travel-tips, china, apps, train, transport]
+tags: [China, Travel, Solo Trip, Train]
 description: A step-by-step guide to booking China high-speed rail tickets on 12306 — for international travellers without a Chinese phone number.
 image:
   path: /assets/img/2025/china/12306/cover.jpg
