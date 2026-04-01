@@ -357,9 +357,7 @@ order: 5
 }
 </style>
 
-<!-- ═══════════════════════════════════
-     HERO
-════════════════════════════════════ -->
+
 <div class="about-hero reveal">
   <span>Hi, I'm <em>Angel</em> 👋</span>
 </div>
@@ -367,26 +365,18 @@ order: 5
   Traveller · Photographer · Storyteller
 </div>
 
-<!-- ═══════════════════════════════════
-     INTRO PROSE
-════════════════════════════════════ -->
 <div class="about-prose reveal reveal-delay-2">
   <p>Welcome to my little corner of the internet, and thank you for stopping by. If you've found your way here, I hope you're curious to learn a bit more about the story behind this site.</p>
   <p>My name is Shing Hui — Angel to most people — and I created this website in the winter of 2025 as a creative outlet for my love of travel, photography, and personal reflections. I realised my personal social media accounts weren't giving me the space or reach I wanted, especially for the meaningful conversations and touching stories I encountered on the road. So I built something more intentional, and that's how <strong>Glowing Space</strong> was born.</p>
 </div>
 
-<!-- ═══════════════════════════════════
-     HERO IMAGE
-════════════════════════════════════ -->
 <div class="reveal reveal-delay-3">
-  <img src="/assets/img/about/IMG_1404.jpg" alt="Angel in Iceland"
+  <img src="/assets/img/about/IMG_1404.webp" alt="Angel in Iceland"
        style="width:100%; max-height:420px; object-fit:cover; border-radius:10px; margin:1.6rem 0 0.6rem;">
   <p class="img-caption">Somewhere in Iceland — the trip that started everything.</p>
 </div>
 
-<!-- ═══════════════════════════════════
-     BACKSTORY PROSE
-════════════════════════════════════ -->
+
 <div class="about-prose reveal">
   <p>I didn't travel very far during my childhood, but I'm grateful that my family brought me to several ASEAN countries when I was young. Looking back at those old albums always fills me with warmth — and I think that's how photography quietly became one of my deepest passions.</p>
   <p>During my university years in Tainan, Taiwan, I grew up in more ways than one. Then, to my surprise, I was offered an exchange placement in Kraków, Poland. That long journey to Eastern Europe truly changed my life. I kept my camera with me every single day.</p>
@@ -400,21 +390,15 @@ order: 5
   <p>In just six months at Jagiellonian University, I crossed into <strong>17 countries</strong>. Each border felt like a page turning, each city a new chapter I hadn't expected to write.</p>
 </div>
 
-<!-- ═══════════════════════════════════
-     PHOTO STRIP
-════════════════════════════════════ -->
 <div class="photo-strip reveal">
-  <img src="/assets/img/about/IMG_4026.jpeg" alt="Travel memory 1">
-  <img src="/assets/img/about/IMG_5246.jpeg" alt="Travel memory 2">
-  <img src="/assets/img/about/IMG_6609.jpeg" alt="Travel memory 3">
+  <img src="/assets/img/about/IMG_4026.webp" alt="Travel memory 1">
+  <img src="/assets/img/about/IMG_5246.webp" alt="Travel memory 2">
+  <img src="/assets/img/about/IMG_6609.webp" alt="Travel memory 3">
 </div>
 <div class="photo-strip-hint reveal">← scroll to explore →</div>
 
 <hr class="about-divider">
 
-<!-- ═══════════════════════════════════
-     GLOBAL FOOTPRINT
-════════════════════════════════════ -->
 <div class="footprint-section reveal">
   <div class="footprint-eyebrow">✦ Global Footprint</div>
   <div class="footprint-headline">A life shaped by<br>crossing borders.</div>
@@ -471,19 +455,12 @@ order: 5
 
 <hr class="about-divider">
 
-<!-- ═══════════════════════════════════
-     WHAT THIS SITE IS
-════════════════════════════════════ -->
 <div class="about-prose reveal">
   <p>In many ways, this site is my digital journal — a place to share the ups and downs, the detours and discoveries. I've been adding travel itinerary posts covering where I went, what I did, what I ate, and what surprised me. I hope some of it genuinely helps if you're planning a similar trip.</p>
   <p>Feel free to explore — there are already plenty of destinations here, with more always on the way.</p>
 </div>
 
 <hr class="about-divider">
-
-<!-- ═══════════════════════════════════
-     NOTES — Language & Copyright
-════════════════════════════════════ -->
 
 <div class="note-card reveal">
   <div class="note-card-label">🌐 A note on language</div>
@@ -497,9 +474,6 @@ order: 5
 
 <hr class="about-divider">
 
-<!-- ═══════════════════════════════════
-     SOCIAL LINKS
-════════════════════════════════════ -->
 <div class="social-section reveal">
   <div class="social-eyebrow">✦ Find me elsewhere</div>
   <div class="social-grid">
@@ -529,17 +503,11 @@ order: 5
 
 <hr class="about-divider">
 
-<!-- ═══════════════════════════════════
-     CLOSING
-════════════════════════════════════ -->
 <div class="closing-note reveal">
   So that's a little about me. I hope you enjoy the photographs and stories. 🌿<br>
   Feel free to share your thoughts — I'd genuinely love to hear from you.
 </div>
 
-<!-- ═══════════════════════════════════
-     SCRIPTS
-════════════════════════════════════ -->
 <script>
 /* ── Scroll reveal ── */
 (function () {

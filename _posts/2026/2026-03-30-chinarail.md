@@ -5,7 +5,7 @@ categories: [Destination, China]
 tags: [China, Travel, Solo Trip, Train]
 description: A step-by-step guide to booking China high-speed rail tickets on 12306 — for international travellers without a Chinese phone number.
 image:
-  path: /assets/img/2025/china/12306/cover.jpg
+  path: /assets/img/2025/china/12306/cover.webp
   alt: China High-Speed Train
 ---
 
