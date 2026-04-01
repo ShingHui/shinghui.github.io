@@ -272,6 +272,80 @@ order: 5
 /* ── Count-up ── */
 .count-up { display: inline-block; }
 
+/* ── Social Links ── */
+.social-section {
+  margin: 0 0 2.4rem;
+}
+.social-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.9rem;
+}
+.social-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.social-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-bg);
+  border: 1px solid var(--gold-border);
+  border-radius: 10px;
+  padding: 12px 18px;
+  text-decoration: none !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: pointer;
+}
+.social-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(176,125,74,0.14);
+  border-color: var(--gold-border-hover);
+  text-decoration: none !important;
+}
+.social-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+.social-info { display: flex; flex-direction: column; gap: 1px; }
+.social-platform {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+.social-handle {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1.1;
+}
+.social-desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.68rem;
+  opacity: 0.42;
+  margin-top: 1px;
+}
+.social-arrow {
+  font-size: 0.8rem;
+  opacity: 0.3;
+  margin-left: 6px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.social-card:hover .social-arrow {
+  opacity: 0.7;
+  transform: translateX(3px);
+}
+
 /* ── Closing note ── */
 .closing-note {
   font-family: 'Cormorant Garamond', Georgia, serif;
@@ -283,7 +357,9 @@ order: 5
 }
 </style>
 
-
+<!-- ═══════════════════════════════════
+     HERO
+════════════════════════════════════ -->
 <div class="about-hero reveal">
   <span>Hi, I'm <em>Angel</em> 👋</span>
 </div>
@@ -291,17 +367,26 @@ order: 5
   Traveller · Photographer · Storyteller
 </div>
 
+<!-- ═══════════════════════════════════
+     INTRO PROSE
+════════════════════════════════════ -->
 <div class="about-prose reveal reveal-delay-2">
   <p>Welcome to my little corner of the internet, and thank you for stopping by. If you've found your way here, I hope you're curious to learn a bit more about the story behind this site.</p>
   <p>My name is Shing Hui — Angel to most people — and I created this website in the winter of 2025 as a creative outlet for my love of travel, photography, and personal reflections. I realised my personal social media accounts weren't giving me the space or reach I wanted, especially for the meaningful conversations and touching stories I encountered on the road. So I built something more intentional, and that's how <strong>Glowing Space</strong> was born.</p>
 </div>
 
+<!-- ═══════════════════════════════════
+     HERO IMAGE
+════════════════════════════════════ -->
 <div class="reveal reveal-delay-3">
   <img src="/assets/img/about/IMG_1404.jpg" alt="Angel in Iceland"
        style="width:100%; max-height:420px; object-fit:cover; border-radius:10px; margin:1.6rem 0 0.6rem;">
   <p class="img-caption">Somewhere in Iceland — the trip that started everything.</p>
 </div>
 
+<!-- ═══════════════════════════════════
+     BACKSTORY PROSE
+════════════════════════════════════ -->
 <div class="about-prose reveal">
   <p>I didn't travel very far during my childhood, but I'm grateful that my family brought me to several ASEAN countries when I was young. Looking back at those old albums always fills me with warmth — and I think that's how photography quietly became one of my deepest passions.</p>
   <p>During my university years in Tainan, Taiwan, I grew up in more ways than one. Then, to my surprise, I was offered an exchange placement in Kraków, Poland. That long journey to Eastern Europe truly changed my life. I kept my camera with me every single day.</p>
@@ -315,6 +400,9 @@ order: 5
   <p>In just six months at Jagiellonian University, I crossed into <strong>17 countries</strong>. Each border felt like a page turning, each city a new chapter I hadn't expected to write.</p>
 </div>
 
+<!-- ═══════════════════════════════════
+     PHOTO STRIP
+════════════════════════════════════ -->
 <div class="photo-strip reveal">
   <img src="/assets/img/about/IMG_4026.jpeg" alt="Travel memory 1">
   <img src="/assets/img/about/IMG_5246.jpeg" alt="Travel memory 2">
@@ -324,6 +412,9 @@ order: 5
 
 <hr class="about-divider">
 
+<!-- ═══════════════════════════════════
+     GLOBAL FOOTPRINT
+════════════════════════════════════ -->
 <div class="footprint-section reveal">
   <div class="footprint-eyebrow">✦ Global Footprint</div>
   <div class="footprint-headline">A life shaped by<br>crossing borders.</div>
@@ -380,12 +471,19 @@ order: 5
 
 <hr class="about-divider">
 
+<!-- ═══════════════════════════════════
+     WHAT THIS SITE IS
+════════════════════════════════════ -->
 <div class="about-prose reveal">
   <p>In many ways, this site is my digital journal — a place to share the ups and downs, the detours and discoveries. I've been adding travel itinerary posts covering where I went, what I did, what I ate, and what surprised me. I hope some of it genuinely helps if you're planning a similar trip.</p>
   <p>Feel free to explore — there are already plenty of destinations here, with more always on the way.</p>
 </div>
 
 <hr class="about-divider">
+
+<!-- ═══════════════════════════════════
+     NOTES — Language & Copyright
+════════════════════════════════════ -->
 
 <div class="note-card reveal">
   <div class="note-card-label">🌐 A note on language</div>
@@ -399,11 +497,49 @@ order: 5
 
 <hr class="about-divider">
 
+<!-- ═══════════════════════════════════
+     SOCIAL LINKS
+════════════════════════════════════ -->
+<div class="social-section reveal">
+  <div class="social-eyebrow">✦ Find me elsewhere</div>
+  <div class="social-grid">
+
+    <a class="social-card" href="https://www.xiaohongshu.com/user/profile/5cebd39e00000000170217d0" target="_blank" rel="noopener">
+      <span class="social-icon">📕</span>
+      <div class="social-info">
+        <span class="social-platform">小红书 Xiaohongshu</span>
+        <span class="social-handle">果子乐乐崽</span>
+        <span class="social-desc">Travel clips & Guide</span>
+      </div>
+      <span class="social-arrow">→</span>
+    </a>
+
+    <a class="social-card" href="https://www.instagram.com/shing_huii/" target="_blank" rel="noopener">
+      <span class="social-icon">📷</span>
+      <div class="social-info">
+        <span class="social-platform">Instagram</span>
+        <span class="social-handle">shing_huii</span>
+        <span class="social-desc">Socializing & Sharing</span>
+      </div>
+      <span class="social-arrow">→</span>
+    </a>
+
+  </div>
+</div>
+
+<hr class="about-divider">
+
+<!-- ═══════════════════════════════════
+     CLOSING
+════════════════════════════════════ -->
 <div class="closing-note reveal">
   So that's a little about me. I hope you enjoy the photographs and stories. 🌿<br>
   Feel free to share your thoughts — I'd genuinely love to hear from you.
 </div>
 
+<!-- ═══════════════════════════════════
+     SCRIPTS
+════════════════════════════════════ -->
 <script>
 /* ── Scroll reveal ── */
 (function () {

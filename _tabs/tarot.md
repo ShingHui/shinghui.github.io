@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "The Tarot Garden"
+title: "Tarot Garden"
 icon: fa-solid fa-gamepad
 order: 8
 permalink: /tarot/
@@ -25,7 +25,7 @@ permalink: /tarot/
 <div class="tarot-frame-wrapper">
   <iframe
     src="https://tarot-garden.vercel.app/"
-    title="The Tarot Garden"
+    title="🔮The Tarot Garden"
     loading="lazy"
     allowfullscreen
   ></iframe>

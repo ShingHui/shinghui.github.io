@@ -900,7 +900,7 @@ description: China Apps and Other Useful Info (Expenses/Route)
     <h2 id="huangshan" class="cp-h2">Hiking <em>Huangshan</em></h2>
     <div class="story-grid">
       <div class="story-img">
-        <img src="/assets/img/2025/china/13days/Huangshan.JPEG" alt="Huangshan misty peaks" loading="lazy"/>
+        <img src="/assets/img/2025/china/13days/Huangshan.webp" alt="Huangshan misty peaks" loading="lazy"/>
         <div class="story-caption">Guangmingding · Bright Summit · Anhui, China</div>
       </div>
       <div>

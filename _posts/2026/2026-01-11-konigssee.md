@@ -7,7 +7,7 @@ tags: [Salzburg, Königssee, Germany, Hiking, Budget Tips]
 toc: false
 description: "How to visit the German Alps from Salzburg in winter. Includes a crucial money-saving tip about the Jennerbahn Combo Ticket that I missed!"
 image:
-  path: /assets/img/2026/austria/lake-konigssee.JPG
+  path: /assets/img/2026/austria/lake-konigssee.webp
   alt: Lake Konigssee View
 ---
 
@@ -287,10 +287,10 @@ image:
         <br>
          <div style="display: flex; gap: 10px; margin-top: 15px;">
           <div style="flex: 1;">
-            <img src="/assets/img/2026/austria/church-view.JPG" alt="St. Bartholomä" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
+            <img src="/assets/img/2026/austria/church-view.webp" alt="St. Bartholomä" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
           </div>
           <div style="flex: 1;">
-            <img src="/assets/img/2026/austria/boat.JPG" alt="boat" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
+            <img src="/assets/img/2026/austria/boat.webp" alt="boat" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
           </div>
         </div>
         </div>
@@ -305,10 +305,10 @@ image:
         <br>
          <div style="display: flex; gap: 10px; margin-top: 15px;">
           <div style="flex: 1;">
-            <img src="/assets/img/2026/austria/mount-jenner.JPG" alt="Mount Jenner" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
+            <img src="/assets/img/2026/austria/mount-jenner.webp" alt="Mount Jenner" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
           </div>
           <div style="flex: 1;">
-            <img src="/assets/img/2026/austria/cable-car-view.JPG" alt="Cable Car" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
+            <img src="/assets/img/2026/austria/cable-car-view.webp" alt="Cable Car" style="width: 100%; height: auto; border-radius: 6px; object-fit: cover; aspect-ratio: 3/4;">
           </div>
         </div>
         </div>
