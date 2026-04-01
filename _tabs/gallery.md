@@ -5,8 +5,6 @@ order: 7
 ---
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;1,300&family=DM+Sans:wght@300;400;500&display=swap');
-
 :root {
   --accent: #b07d4a;
   --muted: #888;
