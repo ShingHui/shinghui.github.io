@@ -1093,11 +1093,11 @@ description: China Apps and Other Useful Info (Expenses/Route)
   <h2 id="app-gallery" class="cp-h2">In <em>Action</em></h2>
   <div class="gallery-grid">
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="/assets/img/2025/china/13days/china.JPG" alt="" loading="lazy" />
+      <img src="/assets/img/2025/china/13days/china.webp" alt="" loading="lazy" />
       <span class="gallery-label">China Trip</span>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="/assets/img/2025/china/13days/route-expenses.JPG" alt="" loading="lazy" />
+      <img src="/assets/img/2025/china/13days/route-expenses.webp" alt="" loading="lazy" />
       <span class="gallery-label">Route Expenses (Hotel & Airfare & Train)</span>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
@@ -1113,7 +1113,7 @@ description: China Apps and Other Useful Info (Expenses/Route)
       <span class="gallery-label">Alipay Problem</span>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">
-      <img src="/assets/img/2025/china/13days/train-12306.JPG" alt="" loading="lazy" />
+      <img src="/assets/img/2025/china/13days/train-12306.webp" alt="" loading="lazy" />
       <span class="gallery-label">Train 12306</span>
     </div>
     <div class="gallery-item" onclick="openLightbox(this)">

@@ -19,7 +19,7 @@
   },
   {
     "title": "Zermatt Matterhorn",
-    "image": "/assets/img/gallery/zermatt-01.png",
+    "image": "/assets/img/gallery/zermatt-01.webp",
     "city": "Switzerland",
     "location": "Switzerland / Zermatt",
     "capturedOn": "2026-03-07",
@@ -109,7 +109,7 @@
   },
   {
     "title": "Suzhou Tiger Hill",
-    "image": "/assets/img/gallery/suzhou-02.JPG",
+    "image": "/assets/img/gallery/suzhou-02.webp",
     "city": "China",
     "location": "China / Suzhou",
     "capturedOn": "2025-09-10",
@@ -145,7 +145,7 @@
   },
   {
     "title": "Þingvellir National Park",
-    "image": "/assets/img/gallery/iceland-03.jpg",
+    "image": "/assets/img/gallery/iceland-03.webp",
     "city": "Iceland",
     "location": "Iceland / Þingvellir",
     "capturedOn": "2024-10-22",
@@ -154,7 +154,7 @@
   },
   {
     "title": "Gullfoss Waterfall",
-    "image": "/assets/img/gallery/waterfall-01.jpg",
+    "image": "/assets/img/gallery/waterfall-01.webp",
     "city": "Iceland",
     "location": "Iceland / Gullfoss Waterfall",
     "capturedOn": "2024-10-21",

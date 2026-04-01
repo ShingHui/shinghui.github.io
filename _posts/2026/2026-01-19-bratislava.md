@@ -206,7 +206,7 @@ image:
         <p> Bratislava felt unusually quiet, so I changed my plan and decided to head to Trenčín instead. There wasn’t much drawing me to stay around the main square, so I went straight toward the suburbs. I picked up some bread from Billa and Lidl and made a simple DIY lunch to eat during the 1 hour 15 minute train ride to Trenčín.</p>
         
         <div class="timeline-img">
-           <img src="/assets/img/2026/slovakia/me.JPG" alt="">
+           <img src="/assets/img/2026/slovakia/me.webp" alt="">
         </div>
         
         <p style="margin-top: 10px;"><strong>The Castle Hike:</strong> The climb was steep, but I treated it like a sport. The castle (€8.00) dominates the city. Just follow the "HRAD" signs.</p>
