@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Psychology of Near-Expired Food"
+title: "The Psychology of Near-Expired Food in Taiwan"
 date: 2026-03-20 00:00:00 +0800
 categories: [Portfolio]
 tags: [Consumer Behavior, Social Psychology, Market Research, ESG]
