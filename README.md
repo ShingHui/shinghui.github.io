@@ -1,6 +1,6 @@
 # ✦ Angel's Glowing Space — shinghui.github.io
 
-> *Turning thoughts into pixels, ideas made tangible, drifting across the internet as intangible assets.*
+> *Turning thoughts into pixels — ideas made tangible, drifting across the internet as intangible assets.*
 
 🔗 **Live site:** [shinghui.github.io](https://shinghui.github.io/)
 
@@ -19,9 +19,9 @@ The original blueprint was simple: **take what's in my head and give it form onl
 | Section | Description |
 |---|---|
 | ✈️ **Travel** | Solo travel journals across Europe, Asia, and beyond — Iceland, Prague, Rome, China, and more |
-| 🧠 **Portfolio** | Psychology research & case studies from NCKU - experimental studies |
+| 🧠 **Portfolio** | Psychology research & case studies from NCKU |
 | 🛠️ **Tutorials** | Jekyll Chirpy customisation guides |
-| 📸 **Gallery** | Film photography and visual moments from the Europe Trips|
+| 📸 **Gallery** | Film photography and visual moments from the trips |
 | 🃏 **Tarot Garden** | A quiet, curious space of its own |
 
 ---
@@ -30,7 +30,25 @@ The original blueprint was simple: **take what's in my head and give it form onl
 
 - **[Jekyll](https://jekyllrb.com/)** — static site generator
 - **[Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy)** — base theme (v7.5.0), customised with dynamic backgrounds and personal styling tweaks *(see [this post](https://shinghui.github.io/posts/chirpy-custom/) for the full guide)*
-- **GitHub Pages** — hosting
+- **GitHub Pages** — hosting & deployment
+
+---
+
+## 🧰 Tools & Stack
+
+### 🌐 Deployment & Analytics
+| Tool | Purpose |
+|---|---|
+| **GitHub Pages** | Site hosting and deployment via HTML/CSS |
+| **Supabase** | Backend database — for future data collection and analysis |
+| **Google Analytics** | Tracking reader traffic, user behaviour, and content performance |
+
+### 🤖 Development & AI-Assisted Workflow
+| Tool | Purpose |
+|---|---|
+| **Claude** | AI-assisted content refinement, code troubleshooting, and building web applications |
+| **Lovable** | AI-powered frontend development for dashboards and web app interfaces |
+| **Visual Studio Code** | Primary code editor for site development and customisation |
 
 ---
 
