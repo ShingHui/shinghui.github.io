@@ -18,11 +18,11 @@ The original blueprint was simple: **take what's in my head and give it form onl
 
 | Section | Description |
 |---|---|
-| ✈️ **Travel** | Solo travel journals across Europe, Asia, and beyond — Iceland, Prague, Rome, China, and more |
-| 🧠 **Portfolio** | Psychology research & case studies from NCKU |
-| 🛠️ **Tutorials** | Jekyll Chirpy customisation guides |
-| 📸 **Gallery** | Film photography and visual moments from the trips |
-| 🃏 **Tarot Garden** | A quiet, curious space of its own |
+| **Travel** | Solo travel journals across Europe, Asia, and beyond — Iceland, Prague, Rome, China, and more |
+| **Portfolio** | Psychology research & case studies from NCKU |
+| **Tutorials** | Jekyll Chirpy customisation guides |
+| **Gallery** | Film photography and visual moments from the trips |
+| **Tarot Garden** | A quiet, curious space of its own |
 
 ---
 
@@ -36,14 +36,14 @@ The original blueprint was simple: **take what's in my head and give it form onl
 
 ## 🧰 Tools & Stack
 
-### 🌐 Deployment & Analytics
+### Deployment & Analytics
 | Tool | Purpose |
 |---|---|
 | **GitHub Pages** | Site hosting and deployment via HTML/CSS |
 | **Supabase** | Backend database — for future data collection and analysis |
 | **Google Analytics** | Tracking reader traffic, user behaviour, and content performance |
 
-### 🤖 Development & AI-Assisted Workflow
+### Development & AI-Assisted Workflow
 | Tool | Purpose |
 |---|---|
 | **Claude** | AI-assisted content refinement, code troubleshooting, and building web applications |
@@ -54,16 +54,16 @@ The original blueprint was simple: **take what's in my head and give it form onl
 
 ## 🗺️ Roadmap
 
-### ✅ Done
+### Done
 - [x] Core site live and running
 - [x] Travel, portfolio, gallery, and tarot sections
 - [x] Jekyll Chirpy customisation (dynamic backgrounds, personal tweaks)
 
-### 🔧 In Progress
+### In Progress
 - [ ] SEO sitemap fetch — submitted but not yet successfully indexed
 - [ ] General SEO improvements
 
-### 🔮 Coming Up
+### Coming Up
 - [ ] **PDF export for travel journals** — the goal is to let readers download any travel post as a beautifully formatted PDF to keep or print
 - [ ] **Social media video content** — planning to extend reach through short-form videos on platforms like Instagram/TikTok to grow visibility beyond the blog
 
