@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 5
+order: 2
 ---
 
 <style>
@@ -366,7 +366,7 @@ order: 5
 
 <div class="about-prose reveal reveal-delay-2">
   <p>Welcome to my little corner of the internet, and thank you for stopping by. If you've found your way here, I hope you're curious to learn a bit more about the story behind this site.</p>
-  <p>My name is Shing Hui — Angel to most people — and I created this website in the winter of 2025 as a creative outlet for my love of travel, photography, and personal reflections. I realised my personal social media accounts weren't giving me the space or reach I wanted, especially for the meaningful conversations and touching stories I encountered on the road. So I built something more intentional, and that's how <strong>Glowing Space</strong> was born.</p>
+  <p>My name is Shing Hui, Angel to most people, and I created this website in the winter of 2025 as a creative outlet for my love of travel, photography, and personal reflections. I realised my personal social media accounts weren't giving me the space or reach I wanted, especially for the meaningful conversations and touching stories I encountered on the road. So I built something more intentional, and that's how <strong>Glowing Space</strong> was born.</p>
 </div>
 
 <div class="reveal reveal-delay-3">
@@ -377,7 +377,7 @@ order: 5
 
 
 <div class="about-prose reveal">
-  <p>I didn't travel very far during my childhood, but I'm grateful that my family brought me to several ASEAN countries when I was young. Looking back at those old albums always fills me with warmth — and I think that's how photography quietly became one of my deepest passions.</p>
+  <p>I didn't travel very far during my childhood, but I'm grateful that my family brought me to several ASEAN countries when I was young. Looking back at those old albums always fills me with warmth, and I think that's how photography quietly became one of my deepest passions.</p>
   <p>During my university years in Tainan, Taiwan, I grew up in more ways than one. Then, to my surprise, I was offered an exchange placement in Kraków, Poland. That long journey to Eastern Europe truly changed my life. I kept my camera with me every single day.</p>
 </div>
 
@@ -463,12 +463,12 @@ order: 5
 
 <div class="note-card reveal">
   <div class="note-card-label">🌐 A note on language</div>
-  <p>This site is currently in English only. If you need a Chinese version, your browser's built-in translation feature works reasonably well as a workaround. I'd love to add bilingual support down the road — it's something I'm actively thinking about, just a significant undertaking for a one-person project. Hopefully someday soon.</p>
+  <p>This site is currently in English only. If you need a Chinese version, your browser's built-in translation feature works reasonably well as a workaround. I'd love to add bilingual support down the road, it's something I'm actively thinking about, just a significant undertaking for a one-person project. Hopefully someday soon.</p>
 </div>
 
 <div class="note-card reveal">
   <div class="note-card-label">📷 Photography & copyright</div>
-  <p>Almost every photograph on this site was taken by me personally. You're welcome to use them — just please credit me or link back to this site when you do. It's a small ask for something that took a lot of time and care to create. Unauthorised commercial use is not permitted.</p>
+  <p>Almost every photograph on this site was taken by me personally. You're welcome to use them (just please credit me or link back to this site when you do). It's a small ask for something that took a lot of time and care to create. Unauthorised commercial use is not permitted.</p>
 </div>
 
 <hr class="about-divider">

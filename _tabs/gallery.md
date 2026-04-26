@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-camera
-order: 7
+order: 3
 ---
 
 <style>

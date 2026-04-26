@@ -2,12 +2,10 @@
 layout: page
 title: Portfolio
 icon: fas fa-palette
-order: 6
+order: 4
 ---
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
-
   .page-title, h1.post-title { display: none; }
 
   :root {
@@ -520,7 +518,7 @@ order: 6
     <h1 class="portfolio-greeting">Hi, I'm</h1>
     <h1 class="portfolio-name">Angel.</h1>
     <p class="portfolio-bio">
-    A psychology graduate from NCKU who believes understanding human behaviour and telling compelling stories are two sides of the same coin. By day I research minds. By night I chase light with a camera. This space is where both worlds meet
+    A psychology graduate from NCKU who believes understanding human behaviour and telling compelling stories are two sides of the same coin. By day I research minds. By night I chase light with a camera. This space is where both worlds meet.
     </p>
     <div class="portfolio-buttons">
       <a href="/assets/apply/Resume-Wong-Shing-Hui.pdf" class="btn-primary">Download Resume</a>
@@ -540,7 +538,7 @@ order: 6
       <div class="status-dot"></div>
       <div class="status-text">
         <strong>Available for work</strong>
-        <span>Behavioral Therapist/Special Needs Therapist</span>
+        <span>Corporate Consultant/Management</span>
       </div>
     </div>
   </div>
@@ -565,10 +563,10 @@ order: 6
         <span>11.2021 — 08.2025</span><span class="xp-meta-sep">·</span><span>Tainan, Taiwan</span>
       </div>
       <p class="xp-desc">
-        ● <strong>Monitored</strong> longitudinal behavioural and physiological data from <strong>108 ICU sepsis patients</strong> using wearable device <em>HEARThremo™</em>, conducting daily bedside observations to track skin surface temperature and vital signs for fever detection.<br><br>
-        ● <strong>Applied</strong> time-series analysis to identify predictive trends in skin temperature elevation and clinical variables, supporting evidence-based decision-making in a real-world clinical setting.<br><br>
-        ● <strong>Collaborated</strong> in multidisciplinary clinical research meetings, contributing to literature synthesis, structured data entry, and co-authoring formal research reports for an industry-academic collaboration project.<br><br>
-        ● <strong>Demonstrated</strong> consistent use of R &amp; SPSS to perform advanced statistical analyses, identifying skin temperature and heart rate as significant predictors of fever onset across a <strong>2-year</strong> study period.
+        ● <strong>Monitored</strong> longitudinal physiological data from <strong>108 ICU sepsis patients</strong> using wearable device <em>HEARThremo™</em>over a 2-year period, enabling continuous real-time monitoring of skin surface temperature and vital signs across multiple research projects.<br><br>
+        ● <strong>Applied</strong> time-series analysis to identify predictive trends in skin temperature elevation contributing to evidence-based early warning protocols for fever onset detection in clinical settings.<br><br>
+        ● <strong>Conducted</strong> advanced statistical analyses using R &amp; SPSS across a 2-year study period, identifying skin temperature and heart rate as statistically significant predictors of fever onset, directly informing clinical decision-making frameworks.<br><br>
+        ● <strong>Collaborated</strong> in multidisciplinary clinical research meetings, contributing to literature synthesis, structured data entry, and co-authoring formal research reports for an industry-academic collaboration project.
       </p>
       <div class="xp-tags">
         <span class="xp-tag">R / SPSS</span>
@@ -592,10 +590,10 @@ order: 6
         <span>06.2024 — 09.2024</span><span class="xp-meta-sep">·</span><span>Tainan, Taiwan</span>
       </div>
       <p class="xp-desc">
-        ● <strong>Conducted</strong> individual preference assessments with customers to identify flavour profiles and recommend tailored coffee selections — applying active listening and needs-based profiling in a fast-paced, client-facing environment.<br><br>
-        ● <strong>Delivered</strong> cross-cultural customer service to <strong>international visitors</strong> in English, Mandarin and Malay, demonstrating cultural sensitivity and adaptive communication across diverse client backgrounds.<br><br>
-        ● <strong>Completed</strong> structured skills training <strong>3× per week</strong> in espresso technique, latte art, and single-origin pour-over — demonstrating consistency, reflective learning, and commitment to professional development.<br><br>
-        ● <strong>Resolved</strong> customer concerns promptly and professionally, applying de-escalation and empathetic communication to maintain service satisfaction and a positive client experience.
+        ● <strong>Delivered</strong> efficient service in a high-volume café environment, simultaneously managing beverage preparation, cashier operations, and store upkeep, reducing customer wait time and ensuring smooth service flow during peak hours.<br><br>
+        ● <strong>Provided</strong> multilingual customer service (English, Mandarin, Malay), actively engaging customers to understand preferences and deliver personalized recommendations, enhancing customer satisfaction and repeat patronage.<br><br>
+        ● <strong>Completed</strong> structured barista training (3 sessions/week) in espresso extraction, latte art, and single-origin brewing, achieving consistent beverage quality and adherence to operational standards.<br><br>
+        ● <strong>Managed</strong> end-to-end customer interactions, from order-taking to issue resolution, proactively identifying customer preferences and resolving concerns, improving service experience and minimising complaints.
       </p>
       <div class="xp-tags">
         <span class="xp-tag">Active Listening</span>
@@ -618,10 +616,10 @@ order: 6
         <span>09.2022 — 12.2022</span><span class="xp-meta-sep">·</span><span>Tainan, Taiwan</span>
       </div>
       <p class="xp-desc">
-        ● <strong>Managed</strong> high-volume archival workflows for B2F periodicals, ensuring <strong>100% accuracy</strong> in database maintenance and physical organisation to facilitate a seamless learning environment for university researchers.<br><br>
+        ● <strong>Managed</strong> high-volume archival workflows for B2F periodicals, ensuring <strong>100% accuracy</strong> in database maintenance and physical organisation to  optimize research accessibility.<br><br>
         ● <strong>Facilitated</strong> Nationwide Document Delivery Services (NDDS), coordinating inter-library logistics to meet diverse information needs with a <strong>95%+ user satisfaction rate</strong>.<br><br>
         ● <strong>Monitored</strong> and tracked electronic journal accessibility and subscription data, utilising systematic auditing to resolve technical discrepancies and ensure continuous resource availability.<br><br>
-        ● <strong>Executed</strong> budget control and inventory evaluation for departmental subscriptions, demonstrating strong organisational skills and accountability in managing sensitive institutional resources.
+        ● <strong>Executed</strong> electronic journal access and subscription data, conducting systematic audits to resolve technical discrepancies, ensure continuous resource availability, and support budget tracking and inventory evaluation for departmental subscriptions.
       </p>
       <div class="xp-tags">
         <span class="xp-tag">Archival Management</span>
@@ -649,9 +647,10 @@ order: 6
         <span style="color:var(--muted-lt); font-weight:400; text-transform:none; letter-spacing:0;">Contract ended due to COVID-19</span>
       </div>
       <p class="xp-desc">
-        ● <strong>Maintained</strong> daily financial records including petty cash, inventory counts, staff commission calculations, and accounts reconciliation across multiple store branches.<br><br>
-        ● <strong>Coordinated</strong> daily sales verification with <strong>4 store managers</strong> remotely during the COVID-19 period, demonstrating structured communication and reliability under time-sensitive conditions.<br><br>
-        ● <strong>Adapted</strong> seamlessly to a full remote-working setup during the pandemic, independently managing data accuracy and reporting deadlines without direct supervision.
+        ● <strong>Maintained</strong> and reconciled daily financial records across multiple store branches, including petty cash, inventory, payroll, and commission tracking, ensuring 100% accuracy and timely financial reporting.<br><br>
+        ● <strong>Coordinated</strong> daily sales verification with four store managers remotely, streamlining communication and validation processes, ensuring timely submission and consistency of financial data during COVID-19 disruptions.<br><br>
+        ● <strong>Managed</strong> financial reporting independently in a fully remote environment, implementing structured tracking and verification methods, maintaining data integrity and consistently meeting reporting deadlines without supervision.<br><br>
+        ●	<strong>Employment contract</strong> concluded early due to the COVID-19 pandemic.
       </p>
       <div class="xp-tags">
         <span class="xp-tag">Attention to Detail</span>
@@ -681,7 +680,7 @@ order: 6
       <p class="xp-desc">
         ● <strong>Delivered</strong> 90-min structured sessions weekly for a 4-year-old child, combining academic reinforcement (60 min) with sensorimotor play (30 min).<br><br>
         ● <strong>Established</strong> secure therapeutic rapport through child-led play and positive reinforcement, resulting in measurable improvements in voluntary verbal expression and task engagement within 3 months.<br><br>
-        ● <strong>Designed</strong> individualised lesson plans targeting numeracy, literacy, and expressive language — achieving consistent homework completion and grade-level academic progression.<br><br>
+        ● <strong>Designed</strong> individualised lesson plans targeting numeracy, literacy, and expressive language, achieving consistent homework completion and grade-level academic progression.<br><br>
         ● <strong>Facilitated</strong> 4+ sensorimotor activities per session (clay modelling, collage, colouring) to develop fine motor skills and hand-eye coordination aligned with early childhood developmental milestones.
       </p>
       <div class="xp-tags">
@@ -858,9 +857,9 @@ order: 6
         <span>Tainan, Taiwan</span>
       </div>
       <p class="xp-desc">
-        ● <strong>Initiated</strong> a campus-wide mental health advocacy campaign, "Mental Health First Aid," integrating clinical narratives from individuals recovering from bipolar disorder and schizophrenia to destigmatize mental illness and promote psychological well-being.<br><br>
+        ● <strong>Initiated</strong> a campus-wide mental health advocacy campaign, <strong>"Mental Health First Aid,"</strong> integrating clinical narratives from individuals recovering from bipolar disorder and schizophrenia to destigmatize mental illness and promote psychological well-being.<br><br>
         ● <strong>Launched</strong> the <strong> "Stress Exchange Box,"</strong> an anonymous interactive activity that successfully engaged 27 participants to share personal vulnerabilities and practice empathy by providing positive, written psychological support to peers.<br><br>
-        ● <strong>Directed</strong> an interactive "Mental Health Myths & Facts" quiz for university students and community members. Effectively educated participants on mental illness treatments, symptom identification, and the true meaning of clinical "recovery."
+        ● <strong>Directed</strong> an interactive <strong>"Mental Health Myths & Facts" </strong>quiz for university students and community members. Effectively educated participants on mental illness treatments, symptom identification, and the true meaning of clinical "recovery."
       </p>
       <div class="xp-tags">
         <span class="xp-tag">ALGEE Framework</span>

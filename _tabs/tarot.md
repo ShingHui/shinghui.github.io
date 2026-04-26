@@ -2,7 +2,7 @@
 layout: page
 title: "Tarot Garden"
 icon: fa-solid fa-gamepad
-order: 8
+order: 5
 permalink: /tarot/
 ---
 
