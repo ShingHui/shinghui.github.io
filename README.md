@@ -1,43 +1,81 @@
-# Chirpy Starter
+# ✦ Angel's Glowing Space — shinghui.github.io
 
-[![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy)][gem]&nbsp;
-[![GitHub license](https://img.shields.io/github/license/cotes2020/chirpy-starter.svg?color=blue)][mit]
+> *Turning thoughts into pixels, ideas made tangible, drifting across the internet as intangible assets.*
 
-When installing the [**Chirpy**][chirpy] theme through [RubyGems.org][gem], Jekyll can only read files in the folders
-`_data`, `_layouts`, `_includes`, `_sass` and `assets`, as well as a small part of options of the `_config.yml` file
-from the theme's gem. If you have ever installed this theme gem, you can use the command
-`bundle info --path jekyll-theme-chirpy` to locate these files.
+🔗 **Live site:** [shinghui.github.io](https://shinghui.github.io/)
 
-The Jekyll team claims that this is to leave the ball in the user’s court, but this also results in users not being
-able to enjoy the out-of-the-box experience when using feature-rich themes.
+---
 
-To fully use all the features of **Chirpy**, you need to copy the other critical files from the theme's gem to your
-Jekyll site. The following is a list of targets:
+## 🌱 What This Is
 
-```shell
-.
-├── _config.yml
-├── _plugins
-├── _tabs
-└── index.html
+This is my personal corner of the internet — a space where fleeting thoughts, travel memories, and research work are transformed from the abstract into something real: written words, structured pages, and visual experiences that live on the web as lasting digital artifacts.
+
+The original blueprint was simple: **take what's in my head and give it form online.** That goal has been achieved. What you see here is the result.
+
+---
+
+## 📌 What's Inside
+
+| Section | Description |
+|---|---|
+| ✈️ **Travel** | Solo travel journals across Europe, Asia, and beyond — Iceland, Prague, Rome, China, and more |
+| 🧠 **Portfolio** | Psychology research & case studies from NCKU - experimental studies |
+| 🛠️ **Tutorials** | Jekyll Chirpy customisation guides |
+| 📸 **Gallery** | Film photography and visual moments from the Europe Trips|
+| 🃏 **Tarot Garden** | A quiet, curious space of its own |
+
+---
+
+## 🛠️ Built With
+
+- **[Jekyll](https://jekyllrb.com/)** — static site generator
+- **[Chirpy Theme](https://github.com/cotes2020/jekyll-theme-chirpy)** — base theme (v7.5.0), customised with dynamic backgrounds and personal styling tweaks *(see [this post](https://shinghui.github.io/posts/chirpy-custom/) for the full guide)*
+- **GitHub Pages** — hosting
+
+---
+
+## 🗺️ Roadmap
+
+### ✅ Done
+- [x] Core site live and running
+- [x] Travel, portfolio, gallery, and tarot sections
+- [x] Jekyll Chirpy customisation (dynamic backgrounds, personal tweaks)
+
+### 🔧 In Progress
+- [ ] SEO sitemap fetch — submitted but not yet successfully indexed
+- [ ] General SEO improvements
+
+### 🔮 Coming Up
+- [ ] **PDF export for travel journals** — the goal is to let readers download any travel post as a beautifully formatted PDF to keep or print
+- [ ] **Social media video content** — planning to extend reach through short-form videos on platforms like Instagram/TikTok to grow visibility beyond the blog
+
+---
+
+## 🚀 Run Locally
+
+```bash
+git clone https://github.com/ShingHui/shinghui.github.io.git
+cd shinghui.github.io
+bundle install
+bundle exec jekyll serve
 ```
 
-To save you time, and also in case you lose some files while copying, we extract those files/configurations of the
-latest version of the **Chirpy** theme and the [CD][CD] workflow to here, so that you can start writing in minutes.
+Then open `http://localhost:4000` in your browser.
+
+---
+
+## 📄 License & Credits
+
+- Content © [Angel Wong](https://www.instagram.com/shing_huii/) — all rights reserved
+- Theme: [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) by cotes2020, MIT License
+
+---
 
 ## Usage
 
 Check out the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy/wiki).
 
-## Contributing
+---
 
-This repository is automatically updated with new releases from the theme repository. If you encounter any issues or want to contribute to its improvement, please visit the [theme repository][chirpy] to provide feedback.
+<p align="center">Made with curiosity, wanderlust, and a lot of late nights ✦</p>
 
-## License
-
-This work is published under [MIT][mit] License.
-
-[gem]: https://rubygems.org/gems/jekyll-theme-chirpy
-[chirpy]: https://github.com/cotes2020/jekyll-theme-chirpy/
-[CD]: https://en.wikipedia.org/wiki/Continuous_deployment
-[mit]: https://github.com/cotes2020/chirpy-starter/blob/master/LICENSE
