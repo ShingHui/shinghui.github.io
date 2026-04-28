@@ -521,7 +521,7 @@ order: 4
     A psychology graduate from NCKU who believes understanding human behaviour and telling compelling stories are two sides of the same coin. By day I research minds. By night I chase light with a camera. This space is where both worlds meet.
     </p>
     <div class="portfolio-buttons">
-      <a href="/assets/apply/Resume-Wong-Shing-Hui.pdf" class="btn-primary">Download Resume</a>
+      <a href="/assets/apply/resume_wsh.pdf" class="btn-primary">Download Resume</a>
       <a href="mailto:angelwsh26@hotmail.com" class="btn-secondary">Get in touch</a>
     </div>
   </div>
