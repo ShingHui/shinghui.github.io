@@ -150,7 +150,7 @@ image:
   </div>
 
 <figure style="margin-top: 25px; margin-bottom: 10px; text-align: center;">
-    <img src="/assets/img/2026/austria/salzburg.png" alt="Bus 840 Route Map from Salzburg to Königssee" 
+    <img src="/assets/img/2026/austria/salzburg.webp" alt="Bus 840 Route Map from Salzburg to Königssee" 
          style="width: 100%; max-width: 800px; height: auto; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); border: 1px solid #eee;">
     
     <figcaption style="margin-top: 10px; font-size: 0.85rem; color: #666; line-height: 1.5;">
@@ -337,7 +337,7 @@ image:
     </ul>
 
     <figure style="background: #fff; padding: 10px; border-radius: 6px; border: 1px solid #e0d8b0; text-align: center; margin: 0;">
-      <img src="/assets/img/2026/austria/konigssee.png" alt="Königssee Winter Timetable 2025-2026" 
+      <img src="/assets/img/2026/austria/boat_konigssee.webp" alt="Königssee Winter Timetable 2025-2026" 
            style="width: 100%; height: auto; border-radius: 4px; display: block;">
       <figcaption style="margin-top: 8px; font-size: 0.85rem; color: #856404; font-style: italic;">
           📸 <strong>The Proof:</strong> 

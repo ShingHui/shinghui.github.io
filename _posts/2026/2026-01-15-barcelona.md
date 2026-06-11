@@ -7,7 +7,7 @@ tags: [Barcelona, Churos, Blanes, España, Sagrada Familia, Travel]
 toc: false
 description: 🇪🇸 Escaping to Barcelona and the Costa Brava for a perfect solo weekend.
 image:
-  path: /assets/img/2026/barcelona/familia.jpg
+  path: /assets/img/2026/barcelona/familia.webp
   alt: Sagrada Familia
 ---
 
@@ -121,7 +121,7 @@ image:
     </div>
   </div>
 
-  <p>Fueled by pastries, I took the Metro (L4) to Passeig de Gràcia and switched to the <strong>R1 Train</strong> towards Blanes. The train runs right along the coast—a scenic 1.5-hour ride.</p>
+  <p>Fueled by pastries, I took the Metro (L4) to Passeig de Gràcia and switched to the <strong>R1 Train</strong> towards Blanes. The train runs right along the coast, a scenic 1.5-hour ride.</p>
 
   <div class="info-box warning">
     <strong>⚠️ Important Transport Alert:</strong><br>
@@ -142,9 +142,9 @@ image:
   </ul>
 
   <div class="gallery-grid">
-    <img src="/assets/img/2026/barcelona/sant-joan.JPG" alt="Blanes View">
-    <img src="/assets/img/2026/barcelona/rock.JPG" alt="Castell de Sant Joan">
-    <img src="/assets/img/2026/barcelona/sant-francesc.JPG" alt="Coastal Hike">
+    <img src="/assets/img/2026/barcelona/sant-joan.webp" alt="Blanes View">
+    <img src="/assets/img/2026/barcelona/rock.webp" alt="Castell de Sant Joan">
+    <img src="/assets/img/2026/barcelona/sant-francesc.webp" alt="Coastal Hike">
   </div>
 
     <h3 style="text-align: center; font-family: var(--font-serif);">📍 Hiking Routes </h3>
@@ -165,7 +165,7 @@ image:
   <p><strong>Morning Vibes:</strong> Strolled through the Gothic Quarter (Barri Gòtic) and found the famous "Kiss of Freedom" mural. Grabbed brunch at <em>Lato Cafe</em> (€22.50) before heading to the main event.</p>
 
   <div class="spot-highlight">
-    <img src="/assets/img/2026/barcelona/sagrada.jpg" alt="Sagrada Familia" class="spot-img">
+    <img src="/assets/img/2026/barcelona/sagrada.webp" alt="Sagrada Familia" class="spot-img">
     <div class="spot-text">
       <span class="spot-meta">The Masterpiece</span>
       <h3>Sagrada Familia</h3>
@@ -183,7 +183,7 @@ image:
   <p>After soaking in the art, I grabbed a drink at <em>Chinese Tofu Magician</em> (€6.80) and headed to San Sebastian Beach for some guitar vibes and sunset.</p>
 
   <div class="spot-highlight reverse">
-    <img src="/assets/img/2026/barcelona/bar.jpeg" alt="Bar Orient Express" class="spot-img">
+    <img src="/assets/img/2026/barcelona/bar.webp" alt="Bar Orient Express" class="spot-img">
     <div class="spot-text">
       <span class="spot-meta">Nightlife Experience</span>
       <h3>Bar Orient Express</h3>
@@ -238,7 +238,7 @@ image:
   <p><strong>Transport Note:</strong> Milan public transport tickets are valid for 90 minutes after validation. You can transfer between buses, trams, and the metro freely.</p>
 
   <div class="spot-highlight">
-    <img src="/assets/img/2026/barcelona/slow-sud.jpeg" alt="Pasta con le Sarde" class="spot-img">
+    <img src="/assets/img/2026/barcelona/slow-sud.webp" alt="Pasta con le Sarde" class="spot-img">
     <div class="spot-text">
       <span class="spot-meta">Lunch • Slow Sud</span>
       <h3>The Cappuccino Incident</h3>
@@ -250,7 +250,7 @@ image:
   </div>
 
   <div class="spot-highlight reverse">
-    <img src="/assets/img/2026/barcelona/ice-cream.jpeg" alt="Ciacco Gelato" class="spot-img">
+    <img src="/assets/img/2026/barcelona/ice-cream.webp" alt="Ciacco Gelato" class="spot-img">
     <div class="spot-text">
       <span class="spot-meta">Sweet Treat</span>
       <h3>Ciacco Gelato</h3>
@@ -269,11 +269,11 @@ image:
   </div>
 
   <div class="gallery-grid">
-    <img src="/assets/img/2026/barcelona/milano.jpeg" alt="Milan Cathedral">
+    <img src="/assets/img/2026/barcelona/milano.webp" alt="Milan Cathedral">
     
-    <img src="/assets/img/2026/barcelona/pizza.jpeg" alt="Margherita Pizza">
+    <img src="/assets/img/2026/barcelona/pizza.webp" alt="Margherita Pizza">
     
-    <img src="/assets/img/2026/barcelona/tram.jpg" alt="Milan Tram">
+    <img src="/assets/img/2026/barcelona/tram.webp" alt="Milan Tram">
   </div>
   
   <p style="text-align: center; font-size: 0.9rem; opacity: 0.8; margin-bottom: 40px;">

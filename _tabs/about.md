@@ -6,7 +6,6 @@ order: 2
 
 <style>
 
-/* ── CSS Variables ── */
 :root {
   --gold: #b07d4a;
   --gold-light: rgba(176,125,74,0.12);
@@ -25,7 +24,6 @@ order: 2
   --gold-border: rgba(176,125,74,0.28);
 }
 
-/* ── Fade-in on scroll ── */
 .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -37,7 +35,6 @@ order: 2
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 
-/* ── Hero greeting ── */
 .about-hero {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: clamp(2rem, 5vw, 3.2rem);
@@ -51,7 +48,6 @@ order: 2
   color: var(--gold);
 }
 
-/* ── Tagline under hero ── */
 .about-tagline {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.8rem;
@@ -63,7 +59,6 @@ order: 2
   margin: -0.8rem 0 1.6rem;
 }
 
-/* ── Body prose ── */
 .about-prose {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.08rem;
@@ -74,7 +69,6 @@ order: 2
 .about-prose p { margin-bottom: 1.1rem; }
 .about-prose strong { font-weight: 500; color: var(--gold); }
 
-/* ── Hero image caption ── */
 .img-caption {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 0.88rem;
@@ -85,7 +79,6 @@ order: 2
   margin-bottom: 1.6rem;
 }
 
-/* ── Photo strip ── */
 .photo-strip {
   display: flex;
   gap: 10px;
@@ -117,7 +110,6 @@ order: 2
   margin-bottom: 1.4rem;
 }
 
-/* ── Inline pull-quote ── */
 .pull-quote {
   border-left: 2.5px solid var(--gold);
   padding: 0.5rem 1.2rem;
@@ -130,14 +122,12 @@ order: 2
   max-width: 580px;
 }
 
-/* ── Divider ── */
 .about-divider {
   border: none;
   border-top: 1px solid rgba(128,128,128,0.18);
   margin: 3rem 0;
 }
 
-/* ── Global Footprint ── */
 .footprint-section {
   background: linear-gradient(135deg, var(--section-bg-from) 0%, var(--section-bg-to) 100%);
   border-radius: 14px;
@@ -247,7 +237,6 @@ order: 2
   opacity: 0.42;
 }
 
-/* ── Note card (for admin-y notes) ── */
 .note-card {
   border-left: 3px solid var(--gold-border-hover);
   padding: 1rem 1.4rem;
@@ -268,10 +257,8 @@ order: 2
 }
 .note-card p { margin: 0.4rem 0 0; }
 
-/* ── Count-up ── */
 .count-up { display: inline-block; }
 
-/* ── Social Links ── */
 .social-section {
   margin: 0 0 2.4rem;
 }
@@ -345,7 +332,6 @@ order: 2
   transform: translateX(3px);
 }
 
-/* ── Closing note ── */
 .closing-note {
   font-family: 'Cormorant Garamond', Georgia, serif;
   font-size: 1.18rem;
@@ -382,7 +368,7 @@ order: 2
 </div>
 
 <div class="pull-quote reveal">
-  "Living in Kraków gave me the travel bug — and with airports right at my doorstep, I had every reason to explore."
+  "Living in Kraków gave me the travel bug, and with airports right at my doorstep, I had every reason to explore."
 </div>
 
 <div class="about-prose reveal">
@@ -455,8 +441,8 @@ order: 2
 <hr class="about-divider">
 
 <div class="about-prose reveal">
-  <p>In many ways, this site is my digital journal — a place to share the ups and downs, the detours and discoveries. I've been adding travel itinerary posts covering where I went, what I did, what I ate, and what surprised me. I hope some of it genuinely helps if you're planning a similar trip.</p>
-  <p>Feel free to explore — there are already plenty of destinations here, with more always on the way.</p>
+  <p>In many ways, this site is my digital journal, a place to share the ups and downs, the detours and discoveries. I've been adding travel itinerary posts covering where I went, what I did, what I ate, and what surprised me. I hope some of it genuinely helps if you're planning a similar trip.</p>
+  <p>Feel free to explore, there are already plenty of destinations here, with more always on the way.</p>
 </div>
 
 <hr class="about-divider">

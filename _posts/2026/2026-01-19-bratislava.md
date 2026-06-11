@@ -6,7 +6,7 @@ categories: [Destination, Central Europe]
 tags: [Bratislava, Čumil, Trenčín, Slovakia, Travel]
 toc: false
 image:
-  path: /assets/img/2026/slovakia/Čumil.JPG
+  path: /assets/img/2026/slovakia/Čumil.webp
   alt: Čumil
 ---
 
@@ -213,7 +213,7 @@ image:
       </div>
 
         <div class="timeline-img">
-           <img src="/assets/img/2026/slovakia/castle.jpg" alt="">
+           <img src="/assets/img/2026/slovakia/castle.webp" alt="">
            <em> steep climb </em>
         </div>
     </div>
@@ -226,7 +226,7 @@ image:
         <p>Back in the capital. Dinner at <em>Viecha U Sedliaka</em> (€ 10.50). Strolled the Old Town afterwards—it was empty, like a movie set from the 1980s.</p>
         
         <div class="timeline-img">
-           <img src="/assets/img/2026/slovakia/halušky.JPG" alt="Halusky">
+           <img src="/assets/img/2026/slovakia/halušky.webp" alt="Halusky">
            <div style="text-align:center; font-size:0.85em; opacity:0.7; margin-top:5px;"><em>Bryndzové Halušky (Sheep Cheese Dumplings)</em></div>
         </div>
       </div> 
@@ -248,22 +248,22 @@ image:
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
             
             <div class="timeline-img" style="margin-top:0;">
-               <img src="/assets/img/2026/slovakia/michaels-gate.JPG" alt="Old Town Hall" style="aspect-ratio: 3/4; object-fit: cover;">
+               <img src="/assets/img/2026/slovakia/michaels-gate.webp" alt="Old Town Hall" style="aspect-ratio: 3/4; object-fit: cover;">
                <div style="font-size:0.75em; text-align:center;">Old Town Hall</div>
             </div>
 
             <div class="timeline-img" style="margin-top:0;">
-               <img src="/assets/img/2026/slovakia/bratislava-castle.JPG" alt="Castle" style="aspect-ratio: 3/4; object-fit: cover;">
+               <img src="/assets/img/2026/slovakia/bratislava-castle.webp" alt="Castle" style="aspect-ratio: 3/4; object-fit: cover;">
                <div style="font-size:0.75em; text-align:center;">The Castle</div>
             </div>
 
              <div class="timeline-img" style="margin-top:0;">
-               <img src="/assets/img/2026/slovakia/blue-church.JPG" alt="Blue Church" style="aspect-ratio: 3/4; object-fit: cover;">
+               <img src="/assets/img/2026/slovakia/blue-church.webp" alt="Blue Church" style="aspect-ratio: 3/4; object-fit: cover;">
                <div style="font-size:0.75em; text-align:center;">Blue Church</div>
             </div>
 
             <div class="timeline-img" style="margin-top:0;">
-               <img src="/assets/img/2026/slovakia/st.martin-cathedral.JPG" alt="Cathedral" style="aspect-ratio: 3/4; object-fit: cover;">
+               <img src="/assets/img/2026/slovakia/st.martin-cathedral.webp" alt="Cathedral" style="aspect-ratio: 3/4; object-fit: cover;">
                <div style="font-size:0.75em; text-align:center;">St. Martin's</div>
             </div>
 

@@ -1,7 +1,7 @@
 [
   {
     "title": "Gosauesee Winter",
-    "image": "/assets/img/gallery/gosau-01.jpg",
+    "image": "/assets/img/gallery/gosau-01.webp",
     "city": "Austria",
     "location": "Austria / Gosauesee",
     "capturedOn": "2024-12-01",
@@ -10,7 +10,7 @@
   },
   {
     "title": "Morning View of Iceland",
-    "image": "/assets/img/gallery/iceland-01.jpg",
+    "image": "/assets/img/gallery/iceland-01.webp",
     "city": "Iceland",
     "location": "Iceland / Þingvellir",
     "capturedOn": "2024-10-22",
@@ -28,7 +28,7 @@
   },
   {
     "title": "Wroclaw Cathedral",
-    "image": "/assets/img/gallery/wroclaw-01.jpg",
+    "image": "/assets/img/gallery/wroclaw-01.webp",
     "city": "Poland",
     "location": "Poland / Wroclaw",
     "capturedOn": "2026-03-07",
@@ -37,7 +37,7 @@
   },
   {
     "title": "Waterfall in Iceland",
-    "image": "/assets/img/gallery/iceland-02.jpg",
+    "image": "/assets/img/gallery/iceland-02.webp",
     "city": "Iceland",
     "location": "Iceland / Jökulsárlón",
     "capturedOn": "2024-10-23",
@@ -46,7 +46,7 @@
   },
   {
     "title": "Prague Castle",
-    "image": "/assets/img/gallery/prague-01.jpg",
+    "image": "/assets/img/gallery/prague-01.webp",
     "city": "Czech Republic",
     "location": "Czech Republic / Prague Castle",
     "capturedOn": "2024-10-27",
@@ -55,7 +55,7 @@
   },
   {
     "title": "Kid",
-    "image": "/assets/img/gallery/kid-01.jpg",
+    "image": "/assets/img/gallery/kid-01.webp",
     "city": "Poland",
     "location": "Poland / Wroclaw Market Square",
     "capturedOn": "2024-10-01",
@@ -64,7 +64,7 @@
   },
   {
     "title": "Suzhou Gardens",
-    "image": "/assets/img/gallery/suzhou-01.jpg",
+    "image": "/assets/img/gallery/suzhou-01.webp",
     "city": "China",
     "location": "China / Suzhou/ Tiger Hill",
     "capturedOn": "2025-09-10",
@@ -73,7 +73,7 @@
   },
   {
     "title": "Malmo City Street",
-    "image": "/assets/img/gallery/sweden-01.jpg",
+    "image": "/assets/img/gallery/sweden-01.webp",
     "city": "Sweden",
     "location": "Sweden / Malmö",
     "capturedOn": "2025-01-18",
@@ -82,7 +82,7 @@
   },
   {
     "title": "Lisboa Ponte 25 de Abril",
-    "image": "/assets/img/gallery/lisboa-01.jpg",
+    "image": "/assets/img/gallery/lisboa-01.webp",
     "city": "Portugal",
     "location": "Portugal / Lisboa",
     "capturedOn": "2025-02-13",
@@ -91,7 +91,7 @@
   },
   {
     "title": "Eiffel Tower",
-    "image": "/assets/img/gallery/paris-01.jpg",
+    "image": "/assets/img/gallery/paris-01.webp",
     "city": "France",
     "location": "France / Paris",
     "capturedOn": "2025-02-09",
@@ -100,7 +100,7 @@
   },
   {
     "title": "Kid in Cologne Square",
-    "image": "/assets/img/gallery/koln-01.jpg",
+    "image": "/assets/img/gallery/koln-01.webp",
     "city": "Germany",
     "location": "Germany / Cologne",
     "capturedOn": "2025-02-02",
@@ -127,7 +127,7 @@
   },
   {
     "title": "Geysir Eruption",
-    "image": "/assets/img/gallery/geysir-01.jpg",
+    "image": "/assets/img/gallery/geysir-01.webp",
     "city": "Iceland",
     "location": "Iceland / Haukadalur Geothermal Area",
     "capturedOn": "2024-10-21",
@@ -136,7 +136,7 @@
   },
   {
     "title": "Kings Lake View",
-    "image": "/assets/img/gallery/konigssee-01.jpg",
+    "image": "/assets/img/gallery/konigssee-01.webp",
     "city": "Berchtesgaden",
     "location": "Germany / Königssee",
     "capturedOn": "2024-10-27",
